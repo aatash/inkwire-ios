@@ -1,0 +1,4240 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 12,
+      "symbol": "ShowAnimation",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 13,
+      "symbol": "ShowAnimation.SlideFromBottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 14,
+      "symbol": "ShowAnimation.SlideFromTop",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 15,
+      "symbol": "ShowAnimation.SlideFromLeft",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 16,
+      "symbol": "ShowAnimation.SlideFromRight",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 17,
+      "symbol": "ShowAnimation.FadeIn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 20,
+      "symbol": "DismissAnimation",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 21,
+      "symbol": "DismissAnimation.SlideToBottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 22,
+      "symbol": "DismissAnimation.SlideToTop",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 23,
+      "symbol": "DismissAnimation.SlideToLeft",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 24,
+      "symbol": "DismissAnimation.SlideToRight",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 25,
+      "symbol": "DismissAnimation.FadeOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 28,
+      "symbol": "AKModalView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 31,
+      "symbol": "AKModalView.dismissOnBackgroundTap",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 32,
+      "symbol": "AKModalView.dismissCompletion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 33,
+      "symbol": "AKModalView.showCompletion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 34,
+      "symbol": "AKModalView.overlayColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 35,
+      "symbol": "AKModalView.showAnimation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 36,
+      "symbol": "AKModalView.dismissAnimation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 37,
+      "symbol": "AKModalView.showAnimationDuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 38,
+      "symbol": "AKModalView.dismissAnimationDuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 39,
+      "symbol": "AKModalView.dismissEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 40,
+      "symbol": "AKModalView.automaticallyCenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 48,
+      "symbol": "AKModalView.init(view:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 53,
+      "symbol": "AKModalView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 57,
+      "symbol": "AKModalView.show()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AKModalView.swift",
+      "line": 86,
+      "symbol": "AKModalView.dismiss()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 15,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 17,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 36,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 41,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 46,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 50,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 54,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 58,
+      "symbol": "AppDelegate.application(_:open:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 62,
+      "symbol": "AppDelegate.connectToFcm()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 73,
+      "symbol": "AppDelegate.tokenRefreshNotification(notification:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 88,
+      "symbol": "AppDelegate.application(_:didRegister:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 93,
+      "symbol": "AppDelegate.application(_:didRegisterForRemoteNotificationsWithDeviceToken:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 98,
+      "symbol": "AppDelegate.application(_:didReceiveRemoteNotification:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/AppDelegate.swift",
+      "line": 107,
+      "symbol": "AppDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 12,
+      "symbol": "PostCellSizeAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 13,
+      "symbol": "PostCellSizeAttributes.contentLabelHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 14,
+      "symbol": "PostCellSizeAttributes.cellContainerHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 17,
+      "symbol": "JournalCellSizeAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 18,
+      "symbol": "JournalCellSizeAttributes.descriptionLabelHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 19,
+      "symbol": "JournalCellSizeAttributes.cellHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 22,
+      "symbol": "PostDetailCellSizeAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 23,
+      "symbol": "PostDetailCellSizeAttributes.contentLabelHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 24,
+      "symbol": "PostDetailCellSizeAttributes.cellContainerHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 27,
+      "symbol": "CommentCellSizeAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 28,
+      "symbol": "CommentCellSizeAttributes.contentLabelHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 29,
+      "symbol": "CommentCellSizeAttributes.cellHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CellSizeCalculator.swift",
+      "line": 32,
+      "symbol": "CellSizeCalculator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Comment.swift",
+      "line": 11,
+      "symbol": "Comment",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Comment.swift",
+      "line": 13,
+      "symbol": "Comment.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Comment.swift",
+      "line": 14,
+      "symbol": "Comment.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Comment.swift",
+      "line": 15,
+      "symbol": "Comment.commenterId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Comment.swift",
+      "line": 16,
+      "symbol": "Comment.commentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Comment.swift",
+      "line": 17,
+      "symbol": "Comment.dbRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "CommentCellSettings",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "CommentCellSettings.contentLabelFont",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "CommentCellSettings.leftMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "CommentCellSettings.rightMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "CommentCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 19,
+      "symbol": "CommentCollectionViewCell.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 20,
+      "symbol": "CommentCollectionViewCell.usernameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "CommentCollectionViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/CommentCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "CommentCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 11,
+      "symbol": "Constants",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 13,
+      "symbol": "Constants.appColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 14,
+      "symbol": "Constants.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 15,
+      "symbol": "Constants.unlikeColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 16,
+      "symbol": "Constants.likeColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 17,
+      "symbol": "Constants.postSeparatorColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 18,
+      "symbol": "Constants.loginSeparatorColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 19,
+      "symbol": "Constants.helpTextColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 20,
+      "symbol": "Constants.navBarShadowColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Constants.swift",
+      "line": 21,
+      "symbol": "Constants.months",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 11,
+      "symbol": "HeaderTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 13,
+      "symbol": "HeaderTableViewCell.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 14,
+      "symbol": "HeaderTableViewCell.usernameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 15,
+      "symbol": "HeaderTableViewCell.emailLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 17,
+      "symbol": "HeaderTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 25,
+      "symbol": "HeaderTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 30,
+      "symbol": "HeaderTableViewCell.setUpProfilePic()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 38,
+      "symbol": "HeaderTableViewCell.setUpUserNameLabel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/HeaderTableViewCell.swift",
+      "line": 46,
+      "symbol": "HeaderTableViewCell.setUpEmailLabel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageDetailCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ImageDetailCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageDetailCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "ImageDetailCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageDetailCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "ImageDetailCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImagePostCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ImagePostCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImagePostCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "ImagePostCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImagePostCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "ImagePostCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextDetailCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ImageTextDetailCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextDetailCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "ImageTextDetailCollectionViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextDetailCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "ImageTextDetailCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextDetailCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "ImageTextDetailCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextPostCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ImageTextPostCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextPostCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "ImageTextPostCollectionViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextPostCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "ImageTextPostCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ImageTextPostCollectionViewCell.swift",
+      "line": 16,
+      "symbol": "ImageTextPostCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InitialViewController.swift",
+      "line": 12,
+      "symbol": "InitialViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InitialViewController.swift",
+      "line": 14,
+      "symbol": "InitialViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InkwireDBUtils.swift",
+      "line": 13,
+      "symbol": "InkwireDBUtils",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InkwireDBUtils.swift",
+      "line": 189,
+      "symbol": "InkwireDBUtils.updateTokenIfNeeded()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InkwireUtils.swift",
+      "line": 12,
+      "symbol": "Array.remove(object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 12,
+      "symbol": "Invite",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 14,
+      "symbol": "Invite.senderId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 15,
+      "symbol": "Invite.receiverId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 16,
+      "symbol": "Invite.journalId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 17,
+      "symbol": "Invite.isContributor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 18,
+      "symbol": "Invite.inviteId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Invite.swift",
+      "line": 19,
+      "symbol": "Invite.dbRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": null,
+      "symbol": "InviteView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": null,
+      "symbol": "InviteView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 11,
+      "symbol": "InviteViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 12,
+      "symbol": "InviteViewDelegate.dismissView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 13,
+      "symbol": "InviteViewDelegate.inviteCollaborator(withId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 14,
+      "symbol": "InviteViewDelegate.inviteObserver(withId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 15,
+      "symbol": "InviteViewDelegate.getUsers(withPrefix:withBlock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 18,
+      "symbol": "InviteView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 20,
+      "symbol": "InviteView.usernameTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 21,
+      "symbol": "InviteView.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 22,
+      "symbol": "InviteView.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 23,
+      "symbol": "InviteView.users",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 24,
+      "symbol": "InviteView.numUsers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 25,
+      "symbol": "InviteView.debounceTimer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 26,
+      "symbol": "InviteView.searchWord",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 27,
+      "symbol": "InviteView.selectedCell",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 28,
+      "symbol": "InviteView.selectedUserId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 29,
+      "symbol": "InviteView.headerBar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 30,
+      "symbol": "InviteView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 31,
+      "symbol": "InviteView.dismissButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 32,
+      "symbol": "InviteView.inviteCollabButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 33,
+      "symbol": "InviteView.inviteObserverButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 35,
+      "symbol": "InviteView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 48,
+      "symbol": "InviteView.didMoveToSuperview()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 52,
+      "symbol": "InviteView.setUpHeaderItems()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 70,
+      "symbol": "InviteView.setUpUsernameTextField()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 83,
+      "symbol": "InviteView.setUpTableView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 115,
+      "symbol": "InviteView.dismissButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 119,
+      "symbol": "InviteView.inviteCollabTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 125,
+      "symbol": "InviteView.inviteObserverTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 131,
+      "symbol": "InviteView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 135,
+      "symbol": "InviteView.getUsers()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 149,
+      "symbol": "InviteView.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 159,
+      "symbol": "InviteView.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 163,
+      "symbol": "InviteView.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 167,
+      "symbol": "InviteView.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 171,
+      "symbol": "InviteView.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 180,
+      "symbol": "InviteView.tableView(_:willDisplay:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 193,
+      "symbol": "InviteView.textFieldDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 198,
+      "symbol": "InviteView.textFieldDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 209,
+      "symbol": "InviteView.touchesBegan(touches:withEvent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/InviteView.swift",
+      "line": 214,
+      "symbol": "InviteView.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 11,
+      "symbol": "Journal",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 13,
+      "symbol": "Journal.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 14,
+      "symbol": "Journal.postIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 15,
+      "symbol": "Journal.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 16,
+      "symbol": "Journal.imageUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 17,
+      "symbol": "Journal.observerIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 24,
+      "symbol": "Journal.contributorIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 31,
+      "symbol": "Journal.journalId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Journal.swift",
+      "line": 32,
+      "symbol": "Journal.dbRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "JournalCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "JournalCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "JournalCollectionViewCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "JournalCollectionViewCell.contributorsLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "JournalCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "HeaderCellSettings",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "HeaderCellSettings.contentLabelFont",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "HeaderCellSettings.leftMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "HeaderCellSettings.rightMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "JournalHeaderCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 19,
+      "symbol": "JournalHeaderCollectionViewCell.descriptionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "JournalHeaderCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalHeaderCollectionViewCell.swift",
+      "line": 28,
+      "symbol": "JournalHeaderCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 11,
+      "symbol": "JournalsNegativeStateViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 12,
+      "symbol": "JournalsNegativeStateViewDelegate.newJournalTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 15,
+      "symbol": "JournalsNegativeStateView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 17,
+      "symbol": "JournalsNegativeStateView.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 19,
+      "symbol": "JournalsNegativeStateView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 54,
+      "symbol": "JournalsNegativeStateView.newJournalTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/JournalsNegativeStateView.swift",
+      "line": 58,
+      "symbol": "JournalsNegativeStateView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": null,
+      "symbol": "LoginViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": null,
+      "symbol": "LoginViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 15,
+      "symbol": "LoginViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 17,
+      "symbol": "LoginViewController.emailTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 18,
+      "symbol": "LoginViewController.passwordTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 19,
+      "symbol": "LoginViewController.googleLoginButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 20,
+      "symbol": "LoginViewController.backgroundImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 21,
+      "symbol": "LoginViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 23,
+      "symbol": "LoginViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 39,
+      "symbol": "LoginViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 43,
+      "symbol": "LoginViewController.backgroundSetup()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 53,
+      "symbol": "LoginViewController.buttonSetup(screenWidth:inkwireColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 80,
+      "symbol": "LoginViewController.googleSignIn()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 86,
+      "symbol": "LoginViewController.textFieldSetup(screenWidth:inkwireColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 137,
+      "symbol": "LoginViewController.loginButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 152,
+      "symbol": "LoginViewController.forgotPassword()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 174,
+      "symbol": "LoginViewController.checkHasUsername(withBlock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 189,
+      "symbol": "LoginViewController.requestUsername()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 208,
+      "symbol": "LoginViewController.saveUsername(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 217,
+      "symbol": "LoginViewController.touchesBegan(touches:withEvent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 222,
+      "symbol": "LoginViewController.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 231,
+      "symbol": "LoginViewController.sign(_:didSignInFor:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/LoginViewController.swift",
+      "line": 275,
+      "symbol": "LoginViewController.signIn(signIn:didDisconnectWithUser:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": null,
+      "symbol": "MenuController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 12,
+      "symbol": "MenuController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 14,
+      "symbol": "MenuController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 15,
+      "symbol": "MenuController.icons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 16,
+      "symbol": "MenuController.optionLabels",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 17,
+      "symbol": "MenuController.segueIdentifiers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 18,
+      "symbol": "MenuController.cells",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 20,
+      "symbol": "MenuController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 26,
+      "symbol": "MenuController.setupTableView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 41,
+      "symbol": "MenuController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 45,
+      "symbol": "MenuController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 52,
+      "symbol": "MenuController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 107,
+      "symbol": "MenuController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuController.swift",
+      "line": 115,
+      "symbol": "MenuController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 11,
+      "symbol": "MenuOptionTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 13,
+      "symbol": "MenuOptionTableViewCell.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 14,
+      "symbol": "MenuOptionTableViewCell.vcLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 15,
+      "symbol": "MenuOptionTableViewCell.unselectedColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 16,
+      "symbol": "MenuOptionTableViewCell.selectedColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 17,
+      "symbol": "MenuOptionTableViewCell.badge",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 18,
+      "symbol": "MenuOptionTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 34,
+      "symbol": "MenuOptionTableViewCell.addBadge(withValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 46,
+      "symbol": "MenuOptionTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/MenuOptionTableViewCell.swift",
+      "line": 59,
+      "symbol": "MenuOptionTableViewCell.unselect()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": null,
+      "symbol": "NewJournalDescriptionViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 12,
+      "symbol": "NewJournalDescriptionViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 14,
+      "symbol": "NewJournalDescriptionViewController.journalImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 15,
+      "symbol": "NewJournalDescriptionViewController.journalName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 16,
+      "symbol": "NewJournalDescriptionViewController.textView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 17,
+      "symbol": "NewJournalDescriptionViewController.placeholderText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 18,
+      "symbol": "NewJournalDescriptionViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 20,
+      "symbol": "NewJournalDescriptionViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 36,
+      "symbol": "NewJournalDescriptionViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 42,
+      "symbol": "NewJournalDescriptionViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 52,
+      "symbol": "NewJournalDescriptionViewController.backButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 60,
+      "symbol": "NewJournalDescriptionViewController.textViewDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 64,
+      "symbol": "NewJournalDescriptionViewController.textViewDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalDescriptionViewController.swift",
+      "line": 81,
+      "symbol": "NewJournalDescriptionViewController.textView(_:shouldChangeTextIn:replacementText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": null,
+      "symbol": "NewJournalViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 12,
+      "symbol": "NewJournalViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 14,
+      "symbol": "NewJournalViewController.selectedImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 15,
+      "symbol": "NewJournalViewController.gradientOverlay",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 16,
+      "symbol": "NewJournalViewController.journalNameTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 17,
+      "symbol": "NewJournalViewController.journalImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 19,
+      "symbol": "NewJournalViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 47,
+      "symbol": "NewJournalViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 52,
+      "symbol": "NewJournalViewController.viewDidDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 56,
+      "symbol": "NewJournalViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 66,
+      "symbol": "NewJournalViewController.dismissVC()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 70,
+      "symbol": "NewJournalViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 82,
+      "symbol": "NewJournalViewController.textFieldDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 86,
+      "symbol": "NewJournalViewController.beganKeyboardNotifications()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 90,
+      "symbol": "NewJournalViewController.endKeyboardNotifications()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 94,
+      "symbol": "NewJournalViewController.keyboardWasShown(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewJournalViewController.swift",
+      "line": 103,
+      "symbol": "NewJournalViewController.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": null,
+      "symbol": "NewPostViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": null,
+      "symbol": "NewPostViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 13,
+      "symbol": "NewPostViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 15,
+      "symbol": "NewPostViewController.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 16,
+      "symbol": "NewPostViewController.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 17,
+      "symbol": "NewPostViewController.textView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 18,
+      "symbol": "NewPostViewController.postButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 19,
+      "symbol": "NewPostViewController.placeholderText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 20,
+      "symbol": "NewPostViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 21,
+      "symbol": "NewPostViewController.journal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 23,
+      "symbol": "NewPostViewController.preferredStatusBarStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 27,
+      "symbol": "NewPostViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 64,
+      "symbol": "NewPostViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 70,
+      "symbol": "NewPostViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 80,
+      "symbol": "NewPostViewController.setupToolBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 103,
+      "symbol": "NewPostViewController.dismissVC()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 107,
+      "symbol": "NewPostViewController.sendPost()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 116,
+      "symbol": "NewPostViewController.cameraButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 126,
+      "symbol": "NewPostViewController.textViewDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 130,
+      "symbol": "NewPostViewController.textViewDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 155,
+      "symbol": "NewPostViewController.touchesBegan(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 162,
+      "symbol": "NewPostViewController.wrapperDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 166,
+      "symbol": "NewPostViewController.doneButtonDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/NewPostViewController.swift",
+      "line": 173,
+      "symbol": "NewPostViewController.cancelButtonDidPress(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 11,
+      "symbol": "PendingInviteTableViewCellDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 12,
+      "symbol": "PendingInviteTableViewCellDelegate.accept(invite:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 13,
+      "symbol": "PendingInviteTableViewCellDelegate.reject(invite:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 16,
+      "symbol": "PendingInviteTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 18,
+      "symbol": "PendingInviteTableViewCell.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 19,
+      "symbol": "PendingInviteTableViewCell.usernameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 20,
+      "symbol": "PendingInviteTableViewCell.journalNameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 21,
+      "symbol": "PendingInviteTableViewCell.acceptButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 22,
+      "symbol": "PendingInviteTableViewCell.rejectButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 23,
+      "symbol": "PendingInviteTableViewCell.invite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 24,
+      "symbol": "PendingInviteTableViewCell.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 26,
+      "symbol": "PendingInviteTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 35,
+      "symbol": "PendingInviteTableViewCell.acceptButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 39,
+      "symbol": "PendingInviteTableViewCell.rejectButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 43,
+      "symbol": "PendingInviteTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInviteTableViewCell.swift",
+      "line": 48,
+      "symbol": "PendingInviteTableViewCell.setUpProfilePic()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesNegativeStateView.swift",
+      "line": 11,
+      "symbol": "PendingInvitesNegativeStateView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesNegativeStateView.swift",
+      "line": 13,
+      "symbol": "PendingInvitesNegativeStateView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesNegativeStateView.swift",
+      "line": 39,
+      "symbol": "PendingInvitesNegativeStateView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": null,
+      "symbol": "PendingInvitesViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": null,
+      "symbol": "PendingInvitesViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 12,
+      "symbol": "PendingInvitesViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 14,
+      "symbol": "PendingInvitesViewController.invites",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 15,
+      "symbol": "PendingInvitesViewController.numInvites",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 16,
+      "symbol": "PendingInvitesViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 17,
+      "symbol": "PendingInvitesViewController.menuButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 18,
+      "symbol": "PendingInvitesViewController.negativeStateView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 20,
+      "symbol": "PendingInvitesViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 55,
+      "symbol": "PendingInvitesViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 66,
+      "symbol": "PendingInvitesViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 94,
+      "symbol": "PendingInvitesViewController.setupNegativeStateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 98,
+      "symbol": "PendingInvitesViewController.showNegativeStateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 103,
+      "symbol": "PendingInvitesViewController.hideNegativeStateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 108,
+      "symbol": "PendingInvitesViewController.setUpTableView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 120,
+      "symbol": "PendingInvitesViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 124,
+      "symbol": "PendingInvitesViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 128,
+      "symbol": "PendingInvitesViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 143,
+      "symbol": "PendingInvitesViewController.tableView(_:willDisplay:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 160,
+      "symbol": "PendingInvitesViewController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 167,
+      "symbol": "PendingInvitesViewController.accept(invite:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PendingInvitesViewController.swift",
+      "line": 185,
+      "symbol": "PendingInvitesViewController.reject(invite:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 12,
+      "symbol": "Post",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 14,
+      "symbol": "Post.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 15,
+      "symbol": "Post.posterId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 16,
+      "symbol": "Post.commentIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 17,
+      "symbol": "Post.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 18,
+      "symbol": "Post.imageUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 19,
+      "symbol": "Post.postId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 20,
+      "symbol": "Post.likedUserIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 22,
+      "symbol": "Post.dbRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 296,
+      "symbol": "Post.like()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/Post.swift",
+      "line": 320,
+      "symbol": "Post.unlike()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "PostCellSettings",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "PostCellSettings.contentLabelFont",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "PostCellSettings.leftMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "PostCellSettings.rightMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "PostCellSettings.imageViewHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 18,
+      "symbol": "PostCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 20,
+      "symbol": "PostCollectionViewCell.containerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "PostCollectionViewCell.dayLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 22,
+      "symbol": "PostCollectionViewCell.monthLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "PostCollectionViewCell.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 24,
+      "symbol": "PostCollectionViewCell.usernameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 25,
+      "symbol": "PostCollectionViewCell.likeButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 26,
+      "symbol": "PostCollectionViewCell.likesLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 27,
+      "symbol": "PostCollectionViewCell.commentButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 28,
+      "symbol": "PostCollectionViewCell.commentsLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 29,
+      "symbol": "PostCollectionViewCell.timeBubble",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 30,
+      "symbol": "PostCollectionViewCell.liked",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 31,
+      "symbol": "PostCollectionViewCell.post",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 33,
+      "symbol": "PostCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 82,
+      "symbol": "PostCollectionViewCell.setupTimeBubble()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 110,
+      "symbol": "PostCollectionViewCell.includeBottomConnector()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 116,
+      "symbol": "PostCollectionViewCell.includeTopConnector()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 122,
+      "symbol": "PostCollectionViewCell.setLiked()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 128,
+      "symbol": "PostCollectionViewCell.setUnliked()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostCollectionViewCell.swift",
+      "line": 134,
+      "symbol": "PostCollectionViewCell.likeButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "PostDetailCellSettings",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "PostDetailCellSettings.contentLabelFont",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "PostDetailCellSettings.leftMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "PostDetailCellSettings.rightMargin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "PostDetailCellSettings.imageViewHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 18,
+      "symbol": "PostDetailCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 20,
+      "symbol": "PostDetailCollectionViewCell.containerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "PostDetailCollectionViewCell.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 22,
+      "symbol": "PostDetailCollectionViewCell.usernameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "PostDetailCollectionViewCell.likeButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 24,
+      "symbol": "PostDetailCollectionViewCell.likesLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 25,
+      "symbol": "PostDetailCollectionViewCell.commentButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 26,
+      "symbol": "PostDetailCollectionViewCell.commentsLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 27,
+      "symbol": "PostDetailCollectionViewCell.liked",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 28,
+      "symbol": "PostDetailCollectionViewCell.post",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 30,
+      "symbol": "PostDetailCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 77,
+      "symbol": "PostDetailCollectionViewCell.setLiked()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 83,
+      "symbol": "PostDetailCollectionViewCell.setUnliked()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailCollectionViewCell.swift",
+      "line": 89,
+      "symbol": "PostDetailCollectionViewCell.likeButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": null,
+      "symbol": "PostDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": null,
+      "symbol": "PostDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 12,
+      "symbol": "PostDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 14,
+      "symbol": "PostDetailViewController.post",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 15,
+      "symbol": "PostDetailViewController.comments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 16,
+      "symbol": "PostDetailViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 17,
+      "symbol": "PostDetailViewController.numComments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 18,
+      "symbol": "PostDetailViewController.newCommentBar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 19,
+      "symbol": "PostDetailViewController.postButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 20,
+      "symbol": "PostDetailViewController.newCommentTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 22,
+      "symbol": "PostDetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 53,
+      "symbol": "PostDetailViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 58,
+      "symbol": "PostDetailViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 62,
+      "symbol": "PostDetailViewController.setupNewCommentBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 92,
+      "symbol": "PostDetailViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 109,
+      "symbol": "PostDetailViewController.flagButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 120,
+      "symbol": "PostDetailViewController.backButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 124,
+      "symbol": "PostDetailViewController.setupCollectionView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 143,
+      "symbol": "PostDetailViewController.endEditting()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 149,
+      "symbol": "PostDetailViewController.postButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 177,
+      "symbol": "PostDetailViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 181,
+      "symbol": "PostDetailViewController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 189,
+      "symbol": "PostDetailViewController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 232,
+      "symbol": "PostDetailViewController.collectionView(_:willDisplay:forItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 282,
+      "symbol": "PostDetailViewController.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 297,
+      "symbol": "PostDetailViewController.scrollViewDidScroll(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 305,
+      "symbol": "PostDetailViewController.textFieldDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 309,
+      "symbol": "PostDetailViewController.textFieldDidEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 313,
+      "symbol": "PostDetailViewController.beganKeyboardNotifications()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 319,
+      "symbol": "PostDetailViewController.endKeyboardNotifications()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 324,
+      "symbol": "PostDetailViewController.keyboardWasShown(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 332,
+      "symbol": "PostDetailViewController.keyboardWillBeHidden(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 337,
+      "symbol": "PostDetailViewController.touchesBegan(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostDetailViewController.swift",
+      "line": 341,
+      "symbol": "PostDetailViewController.textFieldDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": null,
+      "symbol": "PostsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": null,
+      "symbol": "PostsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 13,
+      "symbol": "PostsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 15,
+      "symbol": "PostsViewController.journal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 16,
+      "symbol": "PostsViewController.posts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 17,
+      "symbol": "PostsViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 18,
+      "symbol": "PostsViewController.numPosts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 19,
+      "symbol": "PostsViewController.selectedPost",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 20,
+      "symbol": "PostsViewController.modalView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 21,
+      "symbol": "PostsViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 23,
+      "symbol": "PostsViewController.prefersStatusBarHidden",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 27,
+      "symbol": "PostsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 39,
+      "symbol": "PostsViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 43,
+      "symbol": "PostsViewController.refresh()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 67,
+      "symbol": "PostsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 73,
+      "symbol": "PostsViewController.setupCollectionView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 88,
+      "symbol": "PostsViewController.setupHeader()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 141,
+      "symbol": "PostsViewController.inviteButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 150,
+      "symbol": "PostsViewController.backButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 154,
+      "symbol": "PostsViewController.setupNewPostButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 162,
+      "symbol": "PostsViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 173,
+      "symbol": "PostsViewController.newPostButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 181,
+      "symbol": "PostsViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 185,
+      "symbol": "PostsViewController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 192,
+      "symbol": "PostsViewController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 238,
+      "symbol": "PostsViewController.collectionView(_:willDisplay:forItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 296,
+      "symbol": "PostsViewController.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 310,
+      "symbol": "PostsViewController.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 322,
+      "symbol": "PostsViewController.dismissView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 326,
+      "symbol": "PostsViewController.inviteCollaborator(withId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 336,
+      "symbol": "PostsViewController.inviteObserver(withId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/PostsViewController.swift",
+      "line": 346,
+      "symbol": "PostsViewController.getUsers(withPrefix:withBlock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": null,
+      "symbol": "ProfPicViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 13,
+      "symbol": "ProfPicViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 15,
+      "symbol": "ProfPicViewController.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 16,
+      "symbol": "ProfPicViewController.choosePicButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 17,
+      "symbol": "ProfPicViewController.finishButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 18,
+      "symbol": "ProfPicViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 20,
+      "symbol": "ProfPicViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 62,
+      "symbol": "ProfPicViewController.choosePicButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 68,
+      "symbol": "ProfPicViewController.finishButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 86,
+      "symbol": "ProfPicViewController.wrapperDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 90,
+      "symbol": "ProfPicViewController.doneButtonDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/ProfPicViewController.swift",
+      "line": 97,
+      "symbol": "ProfPicViewController.cancelButtonDidPress(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 11,
+      "symbol": "SettingTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 13,
+      "symbol": "SettingTableViewCell.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 14,
+      "symbol": "SettingTableViewCell.actionName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 16,
+      "symbol": "SettingTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 24,
+      "symbol": "SettingTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 28,
+      "symbol": "SettingTableViewCell.setUpIcon()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingTableViewCell.swift",
+      "line": 34,
+      "symbol": "SettingTableViewCell.setUpActionName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": null,
+      "symbol": "SettingsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": null,
+      "symbol": "SettingsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 14,
+      "symbol": "SettingsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 16,
+      "symbol": "SettingsViewController.profilePic",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 17,
+      "symbol": "SettingsViewController.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 18,
+      "symbol": "SettingsViewController.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 19,
+      "symbol": "SettingsViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 20,
+      "symbol": "SettingsViewController.labelArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 21,
+      "symbol": "SettingsViewController.iconArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 22,
+      "symbol": "SettingsViewController.changedEmailTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 23,
+      "symbol": "SettingsViewController.menuButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 24,
+      "symbol": "SettingsViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 26,
+      "symbol": "SettingsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 44,
+      "symbol": "SettingsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 55,
+      "symbol": "SettingsViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 83,
+      "symbol": "SettingsViewController.setUpProfPic()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 92,
+      "symbol": "SettingsViewController.setUpName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 100,
+      "symbol": "SettingsViewController.setUpEmail()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 108,
+      "symbol": "SettingsViewController.setUpTableView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 120,
+      "symbol": "SettingsViewController.changePictureTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 126,
+      "symbol": "SettingsViewController.changeEmailTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 162,
+      "symbol": "SettingsViewController.logoutTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 169,
+      "symbol": "SettingsViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 173,
+      "symbol": "SettingsViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 178,
+      "symbol": "SettingsViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 195,
+      "symbol": "SettingsViewController.tableView(_:willDisplay:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 201,
+      "symbol": "SettingsViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 212,
+      "symbol": "SettingsViewController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 218,
+      "symbol": "SettingsViewController.wrapperDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 221,
+      "symbol": "SettingsViewController.doneButtonDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 228,
+      "symbol": "SettingsViewController.cancelButtonDidPress(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SettingsViewController.swift",
+      "line": 232,
+      "symbol": "SettingsViewController.uploadChangedPicture(changedImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": null,
+      "symbol": "SignupViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": null,
+      "symbol": "SignupViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 12,
+      "symbol": "SignupViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 14,
+      "symbol": "SignupViewController.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 15,
+      "symbol": "SignupViewController.screenBounds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 16,
+      "symbol": "SignupViewController.signUpButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 17,
+      "symbol": "SignupViewController.googleButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 18,
+      "symbol": "SignupViewController.needLogin",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 19,
+      "symbol": "SignupViewController.emailTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 20,
+      "symbol": "SignupViewController.passTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 21,
+      "symbol": "SignupViewController.nameTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 22,
+      "symbol": "SignupViewController.paddingView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 23,
+      "symbol": "SignupViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 25,
+      "symbol": "SignupViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 48,
+      "symbol": "SignupViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 52,
+      "symbol": "SignupViewController.setUpSignUpButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 64,
+      "symbol": "SignupViewController.setUpGoogleButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 75,
+      "symbol": "SignupViewController.googleSignIn()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 81,
+      "symbol": "SignupViewController.setUpNeedLogin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 92,
+      "symbol": "SignupViewController.signInTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 96,
+      "symbol": "SignupViewController.setUpTextFields()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 162,
+      "symbol": "SignupViewController.signupButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 183,
+      "symbol": "SignupViewController.checkHasUsername(withBlock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 198,
+      "symbol": "SignupViewController.requestUsername()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 218,
+      "symbol": "SignupViewController.saveUsername(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 227,
+      "symbol": "SignupViewController.touchesBegan(touches:withEvent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 232,
+      "symbol": "SignupViewController.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 240,
+      "symbol": "SignupViewController.sign(_:didSignInFor:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SignupViewController.swift",
+      "line": 288,
+      "symbol": "SignupViewController.signIn(signIn:didDisconnectWithUser:withError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsNegativeStateView.swift",
+      "line": 11,
+      "symbol": "SubscribedJournalsNegativeStateView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsNegativeStateView.swift",
+      "line": 13,
+      "symbol": "SubscribedJournalsNegativeStateView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsNegativeStateView.swift",
+      "line": 39,
+      "symbol": "SubscribedJournalsNegativeStateView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": null,
+      "symbol": "SubscribedJournalsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": null,
+      "symbol": "SubscribedJournalsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 14,
+      "symbol": "SubscribedJournalsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 17,
+      "symbol": "SubscribedJournalsViewController.journals",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 18,
+      "symbol": "SubscribedJournalsViewController.numJournals",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 19,
+      "symbol": "SubscribedJournalsViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 20,
+      "symbol": "SubscribedJournalsViewController.selectedJournal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 21,
+      "symbol": "SubscribedJournalsViewController.hud",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 22,
+      "symbol": "SubscribedJournalsViewController.selectedImageForJournal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 23,
+      "symbol": "SubscribedJournalsViewController.negativeStateView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 24,
+      "symbol": "SubscribedJournalsViewController.menuButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 25,
+      "symbol": "SubscribedJournalsViewController.preferredStatusBarStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 29,
+      "symbol": "SubscribedJournalsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 88,
+      "symbol": "SubscribedJournalsViewController.setupNegativeStateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 92,
+      "symbol": "SubscribedJournalsViewController.showNegativeStateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 97,
+      "symbol": "SubscribedJournalsViewController.hideNegativeStateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 102,
+      "symbol": "SubscribedJournalsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 110,
+      "symbol": "SubscribedJournalsViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 141,
+      "symbol": "SubscribedJournalsViewController.menuButtonTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 145,
+      "symbol": "SubscribedJournalsViewController.setupCollectionView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 158,
+      "symbol": "SubscribedJournalsViewController.toNewJournal()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 164,
+      "symbol": "SubscribedJournalsViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 179,
+      "symbol": "SubscribedJournalsViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 183,
+      "symbol": "SubscribedJournalsViewController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 187,
+      "symbol": "SubscribedJournalsViewController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 200,
+      "symbol": "SubscribedJournalsViewController.collectionView(_:willDisplay:forItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 210,
+      "symbol": "SubscribedJournalsViewController.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 214,
+      "symbol": "SubscribedJournalsViewController.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 222,
+      "symbol": "SubscribedJournalsViewController.wrapperDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 225,
+      "symbol": "SubscribedJournalsViewController.doneButtonDidPress(_:images:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/SubscribedJournalsViewController.swift",
+      "line": 232,
+      "symbol": "SubscribedJournalsViewController.cancelButtonDidPress(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/TextDetailCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "TextDetailCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/TextDetailCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "TextDetailCollectionViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/TextDetailCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "TextDetailCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/TextPostCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "TextPostCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/TextPostCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "TextPostCollectionViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/TextPostCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "TextPostCollectionViewCell.setupCell(withAttr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 12,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 14,
+      "symbol": "User.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 15,
+      "symbol": "User.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 16,
+      "symbol": "User.profPicUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 17,
+      "symbol": "User.receivedInviteIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 25,
+      "symbol": "User.journalIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/User.swift",
+      "line": 32,
+      "symbol": "User.userId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/UserTableViewCell.swift",
+      "line": 11,
+      "symbol": "UserTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/UserTableViewCell.swift",
+      "line": 13,
+      "symbol": "UserTableViewCell.profPicImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/UserTableViewCell.swift",
+      "line": 14,
+      "symbol": "UserTableViewCell.nameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/UserTableViewCell.swift",
+      "line": 15,
+      "symbol": "UserTableViewCell.selectView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/UserTableViewCell.swift",
+      "line": 17,
+      "symbol": "UserTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/UserTableViewCell.swift",
+      "line": 36,
+      "symbol": "UserTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeScreenPage.swift",
+      "line": 10,
+      "symbol": "WelcomeScreenPage",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeScreenPage.swift",
+      "line": 12,
+      "symbol": "WelcomeScreenPage.iconImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeScreenPage.swift",
+      "line": 13,
+      "symbol": "WelcomeScreenPage.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeScreenPage.swift",
+      "line": 15,
+      "symbol": "WelcomeScreenPage.init(frame:icon:scrollViewTitle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeScreenPage.swift",
+      "line": 41,
+      "symbol": "WelcomeScreenPage.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": null,
+      "symbol": "WelcomeViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 11,
+      "symbol": "WelcomeViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 13,
+      "symbol": "WelcomeViewController.loginButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 14,
+      "symbol": "WelcomeViewController.signUpButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 15,
+      "symbol": "WelcomeViewController.pageControl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 16,
+      "symbol": "WelcomeViewController.scrollView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 17,
+      "symbol": "WelcomeViewController.screenBounds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 19,
+      "symbol": "WelcomeViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 40,
+      "symbol": "WelcomeViewController.setupNavBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 47,
+      "symbol": "WelcomeViewController.pageTurn(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 52,
+      "symbol": "WelcomeViewController.setUpLoginButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 64,
+      "symbol": "WelcomeViewController.setUpSignUpButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 76,
+      "symbol": "WelcomeViewController.setUpPageControl()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 84,
+      "symbol": "WelcomeViewController.setUpScrollView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 112,
+      "symbol": "WelcomeViewController.segueToLogin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 116,
+      "symbol": "WelcomeViewController.segueToSignUp()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire/Inkwire/WelcomeViewController.swift",
+      "line": 123,
+      "symbol": "WelcomeViewController.scrollViewDidEndDecelerating(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/kevjiang/iOS projects/Inkwire/Inkwire/Inkwire/Inkwire2/Inkwire/Inkwire"
+}

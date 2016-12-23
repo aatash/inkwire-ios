@@ -1,0 +1,6 @@
+framework module Pods_Inkwire {
+  umbrella header "Pods-Inkwire-umbrella.h"
+
+  export *
+  module * { export * }
+}
