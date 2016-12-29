@@ -30,6 +30,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.fixedHeightWhenStatusBarHidden = true
         view.backgroundColor = Constants.backgroundColor
         setupNavBar()
         setUpProfPic()

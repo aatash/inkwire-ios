@@ -22,17 +22,18 @@ class MenuController: UIViewController, SWRevealViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         overlayView = UIView(frame: CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height))
         setupTableView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.revealViewController().frontViewController.view.addSubview(overlayView)
+        UIApplication.shared.isStatusBarHidden = true
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         overlayView.removeFromSuperview()
+        UIApplication.shared.isStatusBarHidden = false
     }
     override func viewWillAppear(_ animated: Bool) {
         let currUserId = FIRAuth.auth()?.currentUser?.uid

@@ -19,6 +19,7 @@ class PendingInvitesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.fixedHeightWhenStatusBarHidden = true
         
         setupNavBar()
         setUpTableView()

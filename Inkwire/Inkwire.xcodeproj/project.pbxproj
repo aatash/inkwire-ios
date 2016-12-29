@@ -14,6 +14,7 @@
 		161FF72E1E08E51000663DA3 /* TextDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FF72D1E08E51000663DA3 /* TextDetailCollectionViewCell.swift */; };
 		161FF7301E08E52100663DA3 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FF72F1E08E52100663DA3 /* ImageDetailCollectionViewCell.swift */; };
 		162191DF1E0CD9610096D019 /* JournalsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162191DE1E0CD9610096D019 /* JournalsFeedViewController.swift */; };
+		1625589D1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1625589C1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.m */; };
 		166283061E0A7C0500A97C5C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166283051E0A7C0500A97C5C /* MenuController.swift */; };
 		166283091E0A82B300A97C5C /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166283081E0A82B300A97C5C /* HeaderTableViewCell.swift */; };
 		1662830B1E0A82CC00A97C5C /* MenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662830A1E0A82CC00A97C5C /* MenuOptionTableViewCell.swift */; };
@@ -96,6 +97,8 @@
 		161FF72D1E08E51000663DA3 /* TextDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		161FF72F1E08E52100663DA3 /* ImageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		162191DE1E0CD9610096D019 /* JournalsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalsFeedViewController.swift; sourceTree = "<group>"; };
+		1625589B1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FixedHeightWhenStatusBarHidden.h"; sourceTree = "<group>"; };
+		1625589C1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FixedHeightWhenStatusBarHidden.m"; sourceTree = "<group>"; };
 		166283051E0A7C0500A97C5C /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		166283081E0A82B300A97C5C /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		1662830A1E0A82CC00A97C5C /* MenuOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 		1662830C1E0A8FEA00A97C5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1625589B1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.h */,
+				1625589C1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.m */,
 				1662830D1E0A900F00A97C5C /* AKModalView.swift */,
 			);
 			name = Frameworks;
@@ -822,6 +827,7 @@
 				161FF7301E08E52100663DA3 /* ImageDetailCollectionViewCell.swift in Sources */,
 				16EF9FB11E091C5E00A2264F /* NewJournalDescriptionViewController.swift in Sources */,
 				16EF9FAF1E09107B00A2264F /* NewJournalViewController.swift in Sources */,
+				1625589D1E15148C008128D6 /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
 				8D4303F81DCEA35E0052EE52 /* AppDelegate.swift in Sources */,
 				167136B11DCFE4F20043C908 /* Journal.swift in Sources */,
 				16F8C2FC1DDD75150088BA52 /* PostsViewController.swift in Sources */,

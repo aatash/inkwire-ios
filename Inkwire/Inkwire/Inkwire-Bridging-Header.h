@@ -8,3 +8,4 @@
 #import <SWRevealViewController/SWRevealViewController.h>
 #import <BBBadgeBarButtonItem/BBBadgeBarButtonItem.h>
 #import <KILabel/KILabel.h>
+#import "UINavigationBar+FixedHeightWhenStatusBarHidden.h"

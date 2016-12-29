@@ -29,6 +29,7 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.fixedHeightWhenStatusBarHidden = true
         tabBarController?.tabBar.tintColor = Constants.appColor
         modalPresentationCapturesStatusBarAppearance = true
         view.backgroundColor = Constants.backgroundColor

@@ -28,10 +28,11 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
         return .lightContent
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        navigationController?.navigationBar.fixedHeightWhenStatusBarHidden = true
         tabBarController?.tabBar.tintColor = Constants.appColor
         modalPresentationCapturesStatusBarAppearance = true
         view.backgroundColor = UIColor(hex: "#EEF2F5")
