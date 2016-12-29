@@ -16,7 +16,8 @@ class HeaderTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        selectionStyle = .none
+        backgroundColor = UIColor.white
         setUpProfilePic()
         setUpUserNameLabel()
         setUpEmailLabel()

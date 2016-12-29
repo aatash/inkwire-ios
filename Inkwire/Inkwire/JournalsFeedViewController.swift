@@ -23,6 +23,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
     var selectedImageForJournal: UIImage?
     var negativeStateView: JournalsNegativeStateView!
     var menuButton: BBBadgeBarButtonItem!
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -40,17 +41,21 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
         
         hud?.textLabel.text = "Loading..."
         hud?.show(in: view)
+        refresh()
+    }
+   
+    func refresh() {
         var possibleJournalIds = [String]()
         
         let currUserId = FIRAuth.auth()?.currentUser?.uid
-        InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
+        InkwireDBUtils.getUserOnce(withId: currUserId!, withBlock: { currUser -> Void in
             possibleJournalIds = currUser.journalIds!
             if possibleJournalIds.count == 0 {
                 self.showNegativeStateView()
                 self.hud?.dismiss()
                 return
             }
-            InkwireDBUtils.pollForJournals(withIds: currUser.journalIds!, withBlock: { retrievedJournal -> Void in
+            InkwireDBUtils.pollForJournals(withIds: possibleJournalIds, withBlock: { retrievedJournal -> Void in
                 
                 var indexPaths = [IndexPath]()
                 if self.journals.index(where: {$0.journalId == retrievedJournal.journalId}) != nil {
@@ -68,6 +73,9 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
                 }
                 
                 self.journals.append(retrievedJournal)
+                self.journals.sort(by: { (journalOne, journalTwo) -> Bool in
+                    return journalOne.updatedAt! > journalTwo.updatedAt!
+                })
                 let index = self.journals.index(where: {$0.journalId == retrievedJournal.journalId})
                 indexPaths.append(IndexPath(item: index!, section: 0))
                 
@@ -84,6 +92,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
                 }
             })
         })
+
     }
     
     func setupNegativeStateView() {
@@ -112,6 +121,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
                 self.menuButton.badgeBGColor = UIColor.red
             }
         })
+        refresh()
     }
     
     func setupNavBar() {
@@ -150,7 +160,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
     
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 12, left: 10, bottom: 0, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 12, left: 10, bottom: 69, right: 10)
         layout.minimumLineSpacing = 12
         layout.minimumInteritemSpacing = 10
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
@@ -164,6 +174,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
     func toNewJournal() {
         let imagePickerController = ImagePickerController()
         imagePickerController.delegate = self
+        imagePickerController.imageLimit = 1
         present(imagePickerController, animated: true, completion: nil)
     }
     
@@ -177,6 +188,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
         if segue.identifier == "toPostsFromMyJournals" {
             let destVC = segue.destination as! PostsViewController
             destVC.journal = selectedJournal
+            destVC.delegate = self
             UIApplication.shared.isStatusBarHidden = true
             navigationController?.isNavigationBarHidden = true
         } else if segue.identifier == "toNewJournal" {
@@ -253,3 +265,18 @@ extension JournalsFeedViewController: JournalsNegativeStateViewDelegate {
         toNewJournal()
     }
 }
+
+//MARK: - PostsViewControllerDelegate
+extension JournalsFeedViewController: PostsViewControllerDelegate {
+    func didDeleteJournal(withId: String) {
+        DispatchQueue.main.async {
+            let index = self.journals.index(where: {$0.journalId == withId})
+            if index != nil {
+                self.journals.remove(at: index!)
+                self.numJournals -= 1
+                self.collectionView.reloadData()
+            }
+        }
+    }
+}
+

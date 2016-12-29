@@ -18,13 +18,22 @@ class MenuController: UIViewController, SWRevealViewControllerDelegate {
     var optionLabels = ["Journals", "Invites", "Settings"]
     var segueIdentifiers = ["toJournalsFromMenu", "toInvitesFromMenu", "toSettingsFromMenu"]
     var cells = [MenuOptionTableViewCell]()
-
+    var overlayView: UIView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        overlayView = UIView(frame: CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height))
         setupTableView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.revealViewController().frontViewController.view.addSubview(overlayView)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        overlayView.removeFromSuperview()
+    }
     override func viewWillAppear(_ animated: Bool) {
         let currUserId = FIRAuth.auth()?.currentUser?.uid
         InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
@@ -39,9 +48,6 @@ class MenuController: UIViewController, SWRevealViewControllerDelegate {
         })
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        print("opened once")
-    }
     
     
     func setupTableView() {

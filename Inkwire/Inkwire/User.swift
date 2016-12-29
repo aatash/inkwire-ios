@@ -24,6 +24,7 @@ class User {
     }
     var journalIds: [String]? {
         didSet {
+            print("setting rn")
             if journalIds != nil {
                 journalIds = Array(Set(journalIds!))
             }
@@ -92,10 +93,13 @@ class User {
                         "profPicUrl": profPicUrl!,
                         "receivedInviteIds": receivedInviteIds!,
                         "journalIds": journalIds!]
+        print("firing ok")
+        print(journalIds?.count)
         FIRDatabase.database().reference().child("Users/").updateChildValues([userId!: userDict], withCompletionBlock: { (error, ref) -> Void in
             if error != nil {
                 print("Error while saving user data: \(error)")
             }
+            print("fired here")
             withBlock(self)
         })
     }

@@ -88,7 +88,7 @@ extension NewJournalDescriptionViewController: UITextViewDelegate, UITextFieldDe
                 let newJournal = Journal(title: journalName!, description: textView.text, coverPic: journalImage!)
                 newJournal.saveToDB(withBlock: { savedJournal -> Void in
                     let currUserId = FIRAuth.auth()?.currentUser?.uid
-                    InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
+                    InkwireDBUtils.getUserOnce(withId: currUserId!, withBlock: { currUser -> Void in
                         currUser.journalIds?.append(savedJournal.journalId!)
                         currUser.saveToDB(withBlock: { savedUser -> Void in
                             DispatchQueue.main.async {

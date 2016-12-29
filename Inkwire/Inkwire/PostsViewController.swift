@@ -10,6 +10,12 @@ import UIKit
 import MXParallaxHeader
 import Firebase
 import JGProgressHUD
+
+
+protocol PostsViewControllerDelegate {
+    func didDeleteJournal(withId: String)
+}
+
 class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavigationControllerDelegate {
     
     var journal: Journal?
@@ -19,6 +25,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
     var selectedPost: Post?
     var modalView: AKModalView!
     var hud = JGProgressHUD(style: .light)
+    var delegate: PostsViewControllerDelegate? = nil
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -39,6 +46,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
 
         
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         UIApplication.shared.isStatusBarHidden = false
@@ -151,7 +159,34 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         inviteButton.addTarget(self, action: #selector(inviteButtonTapped), for: .touchUpInside)
         view.addSubview(inviteButton)
         
+        let deleteButton = UIButton(frame: CGRect(x: view.frame.width - 15 - 35 - 15 - 35, y: 15, width: 35, height: 35))
+        deleteButton.setImage(UIImage(named: "trash")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        deleteButton.tintColor = UIColor.white
+        deleteButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        deleteButton.layer.cornerRadius = backButton.frame.width/2
+        deleteButton.clipsToBounds = true
+        deleteButton.addTarget(self, action: #selector(deleteButtonTapped), for: .touchUpInside)
+        view.addSubview(deleteButton)
         
+    }
+    
+    func deleteButtonTapped() {
+        hud?.textLabel.text = "Deleting..."
+        hud?.show(in: view)
+        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        InkwireDBUtils.getUserOnce(withId: currUserId!, withBlock: { currUser -> Void in
+            if !(currUser.journalIds?.contains((self.journal?.journalId)!))! {
+                return
+            }
+            currUser.journalIds?.remove(object: (self.journal?.journalId)!)
+            currUser.saveToDB(withBlock: { savedUser -> Void in
+                DispatchQueue.main.async {
+                    self.hud?.dismiss()
+                    self.navigationController?.popViewController(animated: true)
+                    self.delegate?.didDeleteJournal(withId: (self.journal?.journalId)!)
+                }
+            })
+        })
     }
     
     func inviteButtonTapped() {

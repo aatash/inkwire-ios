@@ -105,6 +105,7 @@ class NewPostViewController: UIViewController {
     }
     
     func sendPost() {
+        postButton.isEnabled = false
         hud?.textLabel.text = "Posting..."
         hud?.show(in: view)
         journal?.addNewPost(content: textView.text, image: imageView.image, withBlock: { savedPost -> Void in
@@ -116,6 +117,7 @@ class NewPostViewController: UIViewController {
     func cameraButtonTapped() {
         let imagePickerController = ImagePickerController()
         imagePickerController.delegate = self
+        imagePickerController.imageLimit = 1
         present(imagePickerController, animated: true, completion: nil)
     }
 }

@@ -10,6 +10,7 @@ import Firebase
 
 class Journal {
     
+    var updatedAt: Date?
     var title:String?
     var postIds: [String]?
     var description: String?
@@ -69,6 +70,13 @@ class Journal {
         if let journalDescription = journalDict["description"] as? String {
             description = journalDescription
         }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZ"
+        if let createdAtString = journalDict["updatedAt"] as? String {
+            updatedAt = dateFormatter.date(from: createdAtString)
+        } else {
+            updatedAt = Date()
+        }
     }
     
     /**
@@ -87,6 +95,7 @@ class Journal {
         contributorIds?.append((FIRAuth.auth()?.currentUser?.uid)!)
         observerIds = [String]()
         self.description = description
+        updatedAt = Date()
     }
     
     /**
@@ -176,7 +185,7 @@ class Journal {
         if journalId == nil {
             journalId = dbRef.child("Journals/").childByAutoId().key
         }
-        
+        updatedAt = Date()
         if imageUrl == nil {
             InkwireDBUtils.uploadImage(image: coverPic!, withBlock: { urlString -> Void in
                 self.imageUrl = urlString
@@ -186,7 +195,8 @@ class Journal {
                                                   "imageUrl": self.imageUrl!,
                                                   "contributorIds": self.contributorIds!,
                                                   "observerIds": self.observerIds!,
-                                                  "description": self.description!]
+                                                  "description": self.description!,
+                                                  "updatedAt": String(describing: self.updatedAt!)]
                 
                 self.dbRef.child("Journals/").updateChildValues([self.journalId!: journalDict], withCompletionBlock: { (error, ref) -> Void in
                     if error != nil {
@@ -204,7 +214,8 @@ class Journal {
                                               "imageUrl": imageUrl!,
                                               "contributorIds": contributorIds!,
                                               "observerIds": observerIds!,
-                                              "description": description!]
+                                              "description": description!,
+                                              "updatedAt": String(describing: self.updatedAt!)]
             
             dbRef.child("Journals/").updateChildValues([journalId!: journalDict], withCompletionBlock: { (error, ref) -> Void in
                 if error != nil {

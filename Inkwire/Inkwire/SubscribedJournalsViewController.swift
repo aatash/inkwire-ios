@@ -39,6 +39,10 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
         hud?.textLabel.text = "Loading..."
         hud?.show(in: view)
         
+        refresh()
+    }
+    
+    func refresh() {
         var possibleJournalIds = [String]()
         
         let currUserId = FIRAuth.auth()?.currentUser?.uid
@@ -65,6 +69,9 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
                     return
                 }
                 self.journals.append(retrievedJournal)
+                self.journals.sort(by: { (journalOne, journalTwo) -> Bool in
+                    return journalOne.updatedAt! > journalTwo.updatedAt!
+                })
                 let index = self.journals.index(where: {$0.journalId == retrievedJournal.journalId})
                 indexPaths.append(IndexPath(item: index!, section: 0))
                 
@@ -83,7 +90,7 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
             })
             
         })
-        
+
     }
     
     func setupNegativeStateView() {
@@ -103,9 +110,7 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
     override func viewWillAppear(_ animated: Bool) {
         setupNavBar()
         tabBarController?.tabBar.isHidden = false
-        InkwireDBUtils.checkNumPendingInvites(withBlock: { numPending -> Void in
-            //Add badge
-        })
+        refresh()
     }
     
     func setupNavBar() {
@@ -164,6 +169,7 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
         if segue.identifier == "toPostsFromSubscribed" {
             let destVC = segue.destination as! PostsViewController
             destVC.journal = selectedJournal
+            destVC.delegate = self
         } else if segue.identifier == "toNewJournalFromSubscribed" {
             let navVC = segue.destination as! UINavigationController
             let destVC = navVC.topViewController as! NewJournalViewController
@@ -233,7 +239,19 @@ extension SubscribedJournalsViewController: ImagePickerDelegate {
     }
 }
 
-
+//MARK: - PostsViewControllerDelegate
+extension SubscribedJournalsViewController: PostsViewControllerDelegate {
+    func didDeleteJournal(withId: String) {
+        DispatchQueue.main.async {
+            let index = self.journals.index(where: {$0.journalId == withId})
+            if index != nil {
+                self.journals.remove(at: index!)
+                self.numJournals -= 1
+                self.collectionView.reloadData()
+            }
+        }
+    }
+}
 
 
 

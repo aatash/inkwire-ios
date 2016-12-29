@@ -52,6 +52,19 @@ class InkwireDBUtils {
         })
     }
     
+    static func getUserOnce(withId: String, withBlock: @escaping (User) -> Void) {
+        FIRDatabase.database().reference().child("Users/\(withId)").observeSingleEvent(of: .value, with: { snapshot in
+            if snapshot.exists() {
+                if let userDict = snapshot.value as? [String: Any] {
+                    let retrievedUser = User(key: snapshot.key, userDict: userDict)
+                    withBlock(retrievedUser)
+                }
+            } else {
+                print ("Cannot get user")
+            }
+        })
+    }
+    
     /**
      Uploads given image to database and generates imageURL to be used.
      
@@ -175,7 +188,7 @@ class InkwireDBUtils {
         for journalID in withIds {
             print("journal id is")
             print(journalID)
-            dbRef.child("Journals/\(journalID)").observe(.value, with: { snapshot in
+            dbRef.child("Journals/\(journalID)").observeSingleEvent(of: .value, with: { snapshot in
                 if snapshot.exists() {
                     if let journalDict = snapshot.value as? [String: Any] {
                         let retrievedJournal = Journal(key: snapshot.key, journalDict: journalDict as [String : AnyObject])
