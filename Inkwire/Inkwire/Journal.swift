@@ -75,6 +75,7 @@ class Journal {
         if let createdAtString = journalDict["updatedAt"] as? String {
             updatedAt = dateFormatter.date(from: createdAtString)
         } else {
+            print("even getting to this point")
             updatedAt = Date()
         }
     }
@@ -166,7 +167,7 @@ class Journal {
         } else {
             newPost = Post(text: content!, image: image!)
         }
-        
+        updatedAt = Date()
         newPost.savetoDB(withBlock: { savedPost -> Void in
             self.postIds?.append(savedPost.postId!)
             self.saveToDB(withBlock: nil)
@@ -182,10 +183,12 @@ class Journal {
      
      */
     func saveToDB(withBlock: ((Journal) -> Void)?) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZ"
+        let updatedString = dateFormatter.string(from: updatedAt!)
         if journalId == nil {
             journalId = dbRef.child("Journals/").childByAutoId().key
         }
-        updatedAt = Date()
         if imageUrl == nil {
             InkwireDBUtils.uploadImage(image: coverPic!, withBlock: { urlString -> Void in
                 self.imageUrl = urlString
@@ -196,7 +199,7 @@ class Journal {
                                                   "contributorIds": self.contributorIds!,
                                                   "observerIds": self.observerIds!,
                                                   "description": self.description!,
-                                                  "updatedAt": String(describing: self.updatedAt!)]
+                                                  "updatedAt": updatedString]
                 
                 self.dbRef.child("Journals/").updateChildValues([self.journalId!: journalDict], withCompletionBlock: { (error, ref) -> Void in
                     if error != nil {
@@ -215,7 +218,7 @@ class Journal {
                                               "contributorIds": contributorIds!,
                                               "observerIds": observerIds!,
                                               "description": description!,
-                                              "updatedAt": String(describing: self.updatedAt!)]
+                                              "updatedAt": updatedString]
             
             dbRef.child("Journals/").updateChildValues([journalId!: journalDict], withCompletionBlock: { (error, ref) -> Void in
                 if error != nil {

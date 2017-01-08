@@ -33,6 +33,7 @@ class ProfPicViewController: UIViewController {
         profPicImageView.center.x = view.center.x
         profPicImageView.layer.cornerRadius = profPicImageView.frame.width/2
         profPicImageView.clipsToBounds = true
+        profPicImageView.contentMode = .scaleAspectFill
         profPicImageView.image = UIImage(named: "profPicPlaceholder")
         view.addSubview(profPicImageView)
         
@@ -62,6 +63,7 @@ class ProfPicViewController: UIViewController {
     func choosePicButtonTapped() {
         let imagePickerController = ImagePickerController()
         imagePickerController.delegate = self
+        imagePickerController.imageLimit = 1
         present(imagePickerController, animated: true, completion: nil)
     }
     

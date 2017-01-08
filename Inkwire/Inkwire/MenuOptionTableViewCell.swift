@@ -42,6 +42,10 @@ class MenuOptionTableViewCell: UITableViewCell {
         badge.font = UIFont(name: "SFUIText-Regular", size: 10)
         contentView.addSubview(badge)
     }
+    
+    func removeBadge() {
+        badge.removeFromSuperview()
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

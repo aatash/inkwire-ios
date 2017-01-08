@@ -42,7 +42,6 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
         
         hud?.textLabel.text = "Loading..."
         hud?.show(in: view)
-        refresh()
     }
    
     func refresh() {
@@ -59,7 +58,15 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
             InkwireDBUtils.pollForJournals(withIds: possibleJournalIds, withBlock: { retrievedJournal -> Void in
                 
                 var indexPaths = [IndexPath]()
-                if self.journals.index(where: {$0.journalId == retrievedJournal.journalId}) != nil {
+                if let i = self.journals.index(where: {$0.journalId == retrievedJournal.journalId}) {
+                    if self.journals[i].updatedAt != retrievedJournal.updatedAt || self.journals[i].title != retrievedJournal.title || self.journals[i].description != retrievedJournal.description || self.journals[i].imageUrl != retrievedJournal.imageUrl {
+                        self.journals[i] = retrievedJournal
+                        self.journals.sort(by: { (journalOne, journalTwo) -> Bool in
+                            return journalOne.updatedAt! > journalTwo.updatedAt!
+                        })
+                        self.collectionView.reloadData()
+                    }
+                    
                     return
                 }
                 let currUserId = FIRAuth.auth()?.currentUser?.uid
@@ -79,15 +86,23 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
                 })
                 let index = self.journals.index(where: {$0.journalId == retrievedJournal.journalId})
                 indexPaths.append(IndexPath(item: index!, section: 0))
-                
+                var reloadPaths = [IndexPath]()
+                if index != self.journals.count - 1 {
+                    for i in (index! + 1)...(self.journals.count - 1) {
+                        reloadPaths.append(IndexPath(item: i, section: 0))
+                    }
+                }
+               
                 
                 DispatchQueue.main.async {
                     if self.negativeStateView.superview != nil {
                         self.hideNegativeStateView()
                     }
+                    self.numJournals += 1
+                    self.collectionView.insertItems(at: indexPaths)
                     self.collectionView.performBatchUpdates({ Void in
-                        self.numJournals += 1
-                        self.collectionView.insertItems(at: indexPaths)
+                        
+                        self.collectionView.reloadItems(at: reloadPaths)
                         self.hud?.dismiss()
                         }, completion: nil)
                 }
@@ -95,6 +110,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
         })
 
     }
+    
     
     func setupNegativeStateView() {
         negativeStateView = JournalsNegativeStateView(frame: view.frame)
@@ -219,6 +235,8 @@ extension JournalsFeedViewController: UICollectionViewDelegate, UICollectionView
         }
         
         cell.awakeFromNib()
+        cell.imageView.image = nil
+        cell.contributorsLabel.text = ""
         
         return cell
     }

@@ -10,7 +10,7 @@ import UIKit
 import MXParallaxHeader
 import Firebase
 import JGProgressHUD
-
+import ImagePicker
 
 protocol PostsViewControllerDelegate {
     func didDeleteJournal(withId: String)
@@ -19,13 +19,24 @@ protocol PostsViewControllerDelegate {
 class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavigationControllerDelegate {
     
     var journal: Journal?
-    var posts = [Post]()
+    var posts = [Post]() {
+        didSet {
+            if journal != nil {
+                if posts.count == journal?.postIds?.count {
+                    collectionView.reloadData()
+                    
+                }
+            }
+        }
+    }
     var collectionView: UICollectionView!
     var numPosts = 0
     var selectedPost: Post?
     var modalView: AKModalView!
     var hud = JGProgressHUD(style: .light)
     var delegate: PostsViewControllerDelegate? = nil
+    var journalNameLabel: UILabel?
+    var headerView: UIImageView?
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -112,13 +123,13 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
     func setupHeader() {
         
         
-        let headerView: UIImageView = UIImageView()
+        headerView = UIImageView()
         
         journal?.getCoverPic(withBlock: { retrievedImage -> Void in
-            headerView.image = retrievedImage
+            self.headerView?.image = retrievedImage
         })
         
-        headerView.contentMode = .scaleAspectFill
+        headerView?.contentMode = .scaleAspectFill
         collectionView.parallaxHeader.view = headerView
         collectionView.parallaxHeader.height = 300
         collectionView.parallaxHeader.mode = MXParallaxHeaderMode.fill
@@ -133,13 +144,13 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         collectionView.bringSubview(toFront: darkFilter)
         view.bringSubview(toFront: darkFilter)
         
-        let journalNameLabel = UILabel()
-        journalNameLabel.font = UIFont(name: "SFUIText-Regular", size: 25)
-        journalNameLabel.textColor = UIColor.white
-        journalNameLabel.text = journal?.title!
-        let sizeThatFits = journalNameLabel.sizeThatFits(CGSize(width: view.frame.width - 90, height: 1000))
-        journalNameLabel.frame = CGRect(x: 20, y: darkFilter.frame.height - sizeThatFits.height - 20, width: view.frame.width - 90, height: sizeThatFits.height)
-        darkFilter.addSubview(journalNameLabel)
+        journalNameLabel = UILabel()
+        journalNameLabel?.font = UIFont(name: "SFUIText-Regular", size: 25)
+        journalNameLabel?.textColor = UIColor.white
+        journalNameLabel?.text = journal?.title!
+        let sizeThatFits = journalNameLabel?.sizeThatFits(CGSize(width: view.frame.width - 90, height: 1000))
+        journalNameLabel?.frame = CGRect(x: 20, y: darkFilter.frame.height - (sizeThatFits?.height)! - 20, width: view.frame.width - 90, height: (sizeThatFits?.height)!)
+        darkFilter.addSubview(journalNameLabel!)
      
         let backButton = UIButton(frame: CGRect(x: 15, y: 15, width: 35, height: 35))
         backButton.setImage(UIImage(named: "backarrow")?.withRenderingMode(.alwaysTemplate), for: .normal)
@@ -163,14 +174,118 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         deleteButton.setImage(UIImage(named: "trash")?.withRenderingMode(.alwaysTemplate), for: .normal)
         deleteButton.tintColor = UIColor.white
         deleteButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        deleteButton.layer.cornerRadius = backButton.frame.width/2
+        deleteButton.layer.cornerRadius = deleteButton.frame.width/2
         deleteButton.clipsToBounds = true
         deleteButton.addTarget(self, action: #selector(deleteButtonTapped), for: .touchUpInside)
         view.addSubview(deleteButton)
         
+        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        if (journal?.contributorIds?.contains(currUserId!))! {
+            let editButton = UIButton(frame: CGRect(x: view.frame.width - 150, y: 15, width: 35, height: 35))
+            editButton.setImage(UIImage(named: "editbutton")?.withRenderingMode(.alwaysTemplate), for: .normal)
+            editButton.tintColor = UIColor.white
+            editButton.contentMode = .scaleAspectFit
+            editButton.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            editButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+            editButton.layer.cornerRadius = editButton.frame.width/2
+            editButton.clipsToBounds = true
+            editButton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
+            view.addSubview(editButton)
+        }
+        
+        
+        
     }
     
-    func deleteButtonTapped() {
+    func editButtonTapped() {
+        let alert = UIAlertController(title: "Edit Journal", message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
+        let descriptionAction: UIAlertAction = UIAlertAction(title: "Edit Description", style: .default) { action -> Void in
+            self.editDescriptionTapped()
+        }
+        let pictureAction: UIAlertAction = UIAlertAction(title: "Edit Picture", style: .default) { action -> Void in
+            self.editPictureTapped()
+        }
+        let titleAction: UIAlertAction = UIAlertAction(title: "Edit Title", style: .default) { action -> Void in
+            self.editTitleTapped()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { Void in })
+        alert.addAction(titleAction)
+        alert.addAction(descriptionAction)
+        alert.addAction(pictureAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func editTitleTapped() {
+        var titleField = UITextField()
+        let alert = UIAlertController(title: "Enter New Title", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField { (textfield) in
+            titleField.placeholder = "New Title"
+            titleField = textfield
+        }
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
+        let doneAction: UIAlertAction = UIAlertAction(title: "Done", style: .default) { action -> Void in
+            if titleField.text == "" || titleField.text == nil {
+                return
+            }
+            self.hud?.textLabel.text = "Saving..."
+            self.hud?.show(in: self.view)
+            self.journal?.title = titleField.text
+            self.journal?.saveToDB(withBlock: { savedJournal in
+                self.hud?.textLabel.text = "Saved!"
+                self.hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { Void in
+                    self.journal = savedJournal
+                    self.journalNameLabel?.text = savedJournal.title
+                    self.hud?.dismiss()
+                })
+            })
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(doneAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func editDescriptionTapped() {
+        var descriptionField = UITextField()
+        let alert = UIAlertController(title: "Enter New Description", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField { (textfield) in
+            descriptionField.placeholder = "New Description"
+            descriptionField = textfield
+        }
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
+        let doneAction: UIAlertAction = UIAlertAction(title: "Done", style: .default) { action -> Void in
+            if descriptionField.text == "" || descriptionField.text == nil {
+                return
+            }
+            self.hud?.textLabel.text = "Saving..."
+            self.hud?.show(in: self.view)
+            self.journal?.description = descriptionField.text
+            self.journal?.saveToDB(withBlock: { savedJournal in
+                self.hud?.textLabel.text = "Saved!"
+                self.hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { Void in
+                    self.journal = savedJournal
+                    self.collectionView.reloadItems(at: [IndexPath(item: 0, section: 0)])
+                    self.hud?.dismiss()
+                })
+            })
+
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(doneAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func editPictureTapped() {
+        let imagePickerController = ImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.imageLimit = 1
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    
+    func delete() {
         hud?.textLabel.text = "Deleting..."
         hud?.show(in: view)
         let currUserId = FIRAuth.auth()?.currentUser?.uid
@@ -187,6 +302,18 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
                 }
             })
         })
+
+    }
+    
+    func deleteButtonTapped() {
+        let alert = UIAlertController(title: "Confirm Deletion", message: "Are you sure you want to delete this journal?", preferredStyle: UIAlertControllerStyle.alert)
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
+        let nextAction: UIAlertAction = UIAlertAction(title: "Delete", style: .default) { action -> Void in
+            self.delete()
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(nextAction)
+        present(alert, animated: true, completion: nil)
     }
     
     func inviteButtonTapped() {
@@ -207,6 +334,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         if segue.identifier == "toPostDetail" {
             let destVC = segue.destination as! PostDetailViewController
             destVC.post = selectedPost
+            destVC.journal = journal
         } else if segue.identifier == "toNewPost" {
             let navVC = segue.destination as! UINavigationController
             let destVC = navVC.topViewController as! NewPostViewController
@@ -378,9 +506,25 @@ extension PostsViewController: InviteViewDelegate {
         let newInvite = Invite(receiverIdValue: withId, isAContributor: true, journalIdValue: (journal?.journalId)!)
         hud?.textLabel.text = "Sending..."
         hud?.show(in: view)
+        
         newInvite.send(withBlock: { success -> Void in
-            self.hud?.dismiss()
+            DispatchQueue.main.async {
+                self.showSuccess()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                    self.hideSuccess()
+                })
+            }
         })
+    }
+    
+    func showSuccess() {
+        hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hud?.textLabel.text = "Sent!"
+    }
+    
+    func hideSuccess() {
+        hud?.dismiss()
+        hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
     }
     
     func inviteObserver(withId: String) {
@@ -400,7 +544,13 @@ extension PostsViewController: InviteViewDelegate {
         hud?.textLabel.text = "Sending..."
         hud?.show(in: view)
         newInvite.send(withBlock: { success -> Void in
-            self.hud?.dismiss()
+            DispatchQueue.main.async {
+                self.showSuccess()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                    self.hideSuccess()
+                })
+            }
+
         })
     }
     
@@ -416,5 +566,37 @@ extension PostsViewController: PostCollectionViewCellDelegate {
         if let checkedUrl = URL(string: url) {
             UIApplication.shared.openURL(checkedUrl)
         }
+    }
+}
+
+// MARK: - ImagePickerDelegate
+extension PostsViewController: ImagePickerDelegate {
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        
+    }
+    
+    
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        if images.count > 0 {
+            self.hud?.textLabel.text = "Saving..."
+            self.hud?.show(in: self.view)
+            InkwireDBUtils.uploadImage(image: images.first!, withBlock: { downloadUrl in
+                self.journal?.imageUrl = downloadUrl
+                self.journal?.saveToDB(withBlock: { savedJournal in
+                    self.journal = savedJournal
+                    self.hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
+                    self.hud?.textLabel.text = "Saved!"
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { Void in
+                        self.headerView?.image = images.first
+                        self.hud?.dismiss()
+                    })
+                })
+            })
+        }
+    }
+    
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+        
     }
 }

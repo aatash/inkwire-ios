@@ -23,7 +23,13 @@ class MenuController: UIViewController, SWRevealViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         overlayView = UIView(frame: CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hide))
+        overlayView.addGestureRecognizer(tapGesture)
         setupTableView()
+    }
+    
+    func hide() {
+        revealViewController().revealToggle(animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -123,9 +129,13 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
             
             if indexPath.item == 1 {
                 InkwireDBUtils.checkNumPendingInvites(withBlock: { numPending -> Void in
+                    print("now it is")
+                    print(numPending)
                     if numPending > 0 {
                         cell.vcLabel.sizeToFit()
                         cell.addBadge(withValue: numPending)
+                    } else {
+                        cell.removeBadge()
                     }
                 })
             }
@@ -133,6 +143,8 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {

@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Inkwire/JournalsFeedViewController.swift"
-            timestampString = "504698066.975012"
+            timestampString = "505557356.339607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "459"
-            endingLineNumber = "459">
+            startingLineNumber = "477"
+            endingLineNumber = "477">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Inkwire/JournalsFeedViewController.swift"
-            timestampString = "504698066.975012"
+            timestampString = "505557356.339607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "460"
-            endingLineNumber = "460">
+            startingLineNumber = "478"
+            endingLineNumber = "478">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -219,7 +219,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "189"
             endingLineNumber = "189"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -235,40 +235,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "191"
             endingLineNumber = "191"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Inkwire.InkwireDBUtils.pollForJournals (withIds : Swift.Array&lt;Swift.String&gt;, withBlock : (Inkwire.Journal) -&gt; ()) -&gt; ()"
-                  moduleName = "Inkwire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/akkshay/Desktop/Inkwire/Inkwire/Inkwire/InkwireDBUtils.swift"
-                  timestampString = "504689817.773648"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "178"
-                  endingLineNumber = "178"
-                  offsetFromSymbolStart = "741">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Inkwire.InkwireDBUtils.(pollForJournals (withIds : Swift.Array&lt;Swift.String&gt;, withBlock : (Inkwire.Journal) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "Inkwire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/akkshay/Desktop/Inkwire/Inkwire/Inkwire/InkwireDBUtils.swift"
-                  timestampString = "504689817.775119"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "179"
-                  endingLineNumber = "179"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -283,7 +251,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "192"
             endingLineNumber = "192"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -299,7 +267,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "193"
             endingLineNumber = "193"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -309,12 +277,12 @@
                   symbolName = "static Inkwire.InkwireDBUtils.(pollForJournals (withIds : Swift.Array&lt;Swift.String&gt;, withBlock : (Inkwire.Journal) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "Inkwire"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/akkshay/Desktop/Inkwire/Inkwire/Inkwire/InkwireDBUtils.swift"
-                  timestampString = "504689817.78004"
+                  urlString = "file:///Users/akkshay/Desktop/InkwireSubmissionRepo/Inkwire/Inkwire/InkwireDBUtils.swift"
+                  timestampString = "505556511.30416"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
                   offsetFromSymbolStart = "74">
                </Location>
                <Location
@@ -324,12 +292,12 @@
                   symbolName = "static Inkwire.InkwireDBUtils.(pollForJournals (withIds : Swift.Array&lt;Swift.String&gt;, withBlock : (Inkwire.Journal) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "Inkwire"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/akkshay/Desktop/Inkwire/Inkwire/Inkwire/InkwireDBUtils.swift"
-                  timestampString = "504689817.781344"
+                  urlString = "file:///Users/akkshay/Desktop/InkwireSubmissionRepo/Inkwire/Inkwire/InkwireDBUtils.swift"
+                  timestampString = "505556511.30575"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
                   offsetFromSymbolStart = "566">
                </Location>
             </Locations>
@@ -347,7 +315,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "194"
             endingLineNumber = "194"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -363,7 +331,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "195"
             endingLineNumber = "195"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -379,7 +347,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "198"
             endingLineNumber = "198"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -395,7 +363,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "196"
             endingLineNumber = "196"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -411,7 +379,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "197"
             endingLineNumber = "197"
-            landmarkName = "pollForJournalsOnce(withIds:withBlock:)"
+            landmarkName = "pollForJournals(withIds:withBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -428,6 +396,22 @@
             startingLineNumber = "44"
             endingLineNumber = "44"
             landmarkName = "init(key:journalDict:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Inkwire/PostsViewController.swift"
+            timestampString = "505557356.339607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "editTitleTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

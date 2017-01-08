@@ -103,6 +103,7 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, GI
         
         emailTextField = UITextField(frame: CGRect(x: 15, y: 85, width: screenBounds.width - 30, height: 53.66))
         emailTextField.placeholder = "EMAIL"
+        emailTextField.autocapitalizationType = .none
         emailTextField.font = UIFont(name: "SFUIText-Medium", size: 16)
         paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: emailTextField.frame.height))
         emailTextField.leftView = paddingView

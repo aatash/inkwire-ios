@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import JGProgressHUD
+
 
 class PostDetailViewController: UIViewController, UINavigationControllerDelegate {
     
@@ -18,7 +20,8 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
     var newCommentBar: UIView!
     var postButton: UIButton!
     var newCommentTextField: UITextField!
-
+    var hud = JGProgressHUD(style: .light)
+    var journal: Journal?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -84,6 +87,7 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
         postButton.setTitleColor(Constants.likeColor, for: .normal)
         postButton.setTitleColor(UIColor.gray, for: .disabled)
         postButton.addTarget(self, action: #selector(postButtonTapped), for: .touchUpInside)
+        postButton.isEnabled = false
         newCommentBar.addSubview(postButton)
     }
 
@@ -103,8 +107,47 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
         navigationItem.title = "\(day) \(month)"
         let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "flag")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(flagButtonTapped))
+        var items = [UIBarButtonItem]()
+        let flagButton = UIBarButtonItem(image: UIImage(named: "flag")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(flagButtonTapped))
+        items.append(flagButton)
+        if post?.posterId == FIRAuth.auth()?.currentUser?.uid {
+            let deleteButton = UIBarButtonItem(image: UIImage(named: "trash2"), style: .plain, target: self, action: #selector(deleteButtonTapped))
+            items.append(deleteButton)
+        }
+        navigationItem.rightBarButtonItems = items
+        
+        
     }
+    
+    
+    func delete() {
+        hud?.textLabel.text = "Deleting..."
+        hud?.show(in: view)
+        if let i = journal?.postIds?.index(of: post!.postId!) {
+            journal?.postIds?.remove(at: i)
+            journal?.saveToDB(withBlock: { savedJournal -> Void in
+                DispatchQueue.main.async {
+                    self.hud?.dismiss()
+                    self.navigationController?.popViewController(animated: true)
+                }
+            })
+        }
+        
+        
+        
+    }
+    
+    func deleteButtonTapped() {
+        let alert = UIAlertController(title: "Confirm Deletion", message: "Are you sure you want to delete this post?", preferredStyle: UIAlertControllerStyle.alert)
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
+        let nextAction: UIAlertAction = UIAlertAction(title: "Delete", style: .default) { action -> Void in
+            self.delete()
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(nextAction)
+        present(alert, animated: true, completion: nil)
+    }
+
     
     func flagButtonTapped() {
         let alert = UIAlertController(title: "Flag Post", message: "Flag this post if you found the content inappropriate.", preferredStyle: UIAlertControllerStyle.alert)
@@ -147,7 +190,10 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
     }
     
     func postButtonTapped() {
-        post?.addNewComment(text: newCommentTextField.text!, withBlock: { savedComment -> Void in
+        let postText = newCommentTextField.text
+        newCommentTextField.text = ""
+        postButton.isEnabled = false
+        post?.addNewComment(text: postText!, withBlock: { savedComment -> Void in
             var indexPaths = [IndexPath]()
             if self.comments.index(where: {$0.commentId == savedComment.commentId}) != nil || savedComment.date == nil{
                 return

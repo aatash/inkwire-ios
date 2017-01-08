@@ -93,6 +93,7 @@ class LoginViewController: UIViewController {
     
         emailTextField = UITextField(frame: CGRect(x: 20, y: 80, width: UIScreen.main.bounds.width - 40, height: 55))
         emailTextField.center.x = view.center.x
+        emailTextField.autocapitalizationType = .none
         emailTextField.placeholder = "EMAIL"
         emailTextField.font = UIFont(name: "SFUIText-Medium", size: 16)
         emailTextField.borderStyle = .none
