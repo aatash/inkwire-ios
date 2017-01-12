@@ -135,7 +135,9 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
                         cell.vcLabel.sizeToFit()
                         cell.addBadge(withValue: numPending)
                     } else {
-                        cell.removeBadge()
+                        if (cell.badge != nil) {
+                            cell.removeBadge()
+                        }
                     }
                 })
             }
