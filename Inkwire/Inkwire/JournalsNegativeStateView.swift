@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 12/20/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -36,7 +36,7 @@ class JournalsNegativeStateView: UIView {
         paragraphStyle.lineSpacing = 1
         let text = "You don’t have any journals yet. Have your friends invite you to theirs or make your own!"
         let attrString = NSMutableAttributedString(string: text)
-        attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+        attrString.addAttribute(kCTParagraphStyleAttributeName as NSAttributedStringKey, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         helpTextLabel.attributedText = attrString
         addSubview(helpTextLabel)
         

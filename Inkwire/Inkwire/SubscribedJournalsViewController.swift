@@ -2,8 +2,8 @@
 //  JournalsFeedViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -37,8 +37,8 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
         setupCollectionView()
         setupNegativeStateView()
         
-        hud?.textLabel.text = "Loading..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Loading..."
+        hud.show(in: view)
         
         refresh()
     }
@@ -46,12 +46,12 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
     func refresh() {
         var possibleJournalIds = [String]()
         
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
             possibleJournalIds = currUser.journalIds!
             if possibleJournalIds.count == 0 {
                 self.showNegativeStateView()
-                self.hud?.dismiss()
+                self.hud.dismiss()
                 return
             }
             InkwireDBUtils.pollForJournals(withIds: currUser.journalIds!, withBlock: { retrievedJournal -> Void in
@@ -59,12 +59,12 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
                 if self.journals.index(where: {$0.journalId == retrievedJournal.journalId}) != nil {
                     return
                 }
-                let currUserId = FIRAuth.auth()?.currentUser?.uid
+                let currUserId = Auth.auth().currentUser?.uid
                 if !(retrievedJournal.observerIds?.contains(currUserId!))! {
                     _ = possibleJournalIds.remove(object: retrievedJournal.journalId!)
                     if possibleJournalIds.count == 0 {
                         self.showNegativeStateView()
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                         return
                     }
                     return
@@ -81,10 +81,10 @@ class SubscribedJournalsViewController: UIViewController, UINavigationController
                     if self.negativeStateView.superview != nil {
                         self.hideNegativeStateView()
                     }
-                    self.collectionView.performBatchUpdates({ Void in
+                    self.collectionView.performBatchUpdates({
                         self.numJournals += 1
                         self.collectionView.insertItems(at: indexPaths)
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                         }, completion: nil)
                 }
                 
@@ -209,7 +209,7 @@ extension SubscribedJournalsViewController: UICollectionViewDelegate, UICollecti
         journal.getCoverPic(withBlock: { retrievedImage -> Void in
             cell.imageView.image = retrievedImage
         })
-        cell.contributorsLabel.text = "You and \(journal.contributorIds!.count - 1) others"
+        cell.contributorsLabel.text = "\(journal.contributorIds!.count) contributors"
         cell.titleLabel.text = journal.title!
     }
     

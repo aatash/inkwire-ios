@@ -3,71 +3,82 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - Firebase/Analytics (3.3.0):
-    - FirebaseAnalytics (= 3.2.1)
-  - Firebase/Auth (3.3.0):
-    - Firebase/Analytics (= 3.3.0)
-    - FirebaseAuth (= 3.0.3)
-  - Firebase/Core (3.3.0):
-    - Firebase/Analytics (= 3.3.0)
-  - Firebase/Database (3.3.0):
-    - Firebase/Analytics (= 3.3.0)
-    - FirebaseDatabase (= 3.0.2)
-  - Firebase/Messaging (3.3.0):
-    - Firebase/Analytics (= 3.3.0)
-    - FirebaseMessaging (= 1.1.0)
-  - Firebase/Storage (3.3.0):
-    - Firebase/Analytics (= 3.3.0)
-    - FirebaseStorage (= 1.0.2)
-  - FirebaseAnalytics (3.2.1):
-    - FirebaseInstanceID (~> 1.0)
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
-    - GoogleUtilities (~> 1.3)
-  - FirebaseAuth (3.0.3):
-    - FirebaseAnalytics (~> 3.2)
-    - GoogleNetworkingUtilities (~> 1.2)
-    - GoogleParsingUtilities (~> 1.1)
-    - GoogleUtilities (~> 1.3)
-  - FirebaseDatabase (3.0.2):
-    - FirebaseAnalytics (~> 3.2)
-  - FirebaseInstanceID (1.0.7)
-  - FirebaseMessaging (1.1.0):
-    - FirebaseAnalytics (~> 3.2)
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleIPhoneUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
-  - FirebaseStorage (1.0.2):
-    - FirebaseAnalytics (~> 3.2)
-    - GoogleNetworkingUtilities (~> 1.2)
-  - GoogleAppUtilities (1.1.1):
-    - GoogleSymbolUtilities (~> 1.0)
-  - GoogleAuthUtilities (2.0.1):
-    - GoogleNetworkingUtilities (~> 1.0)
-    - GoogleSymbolUtilities (~> 1.0)
-  - GoogleInterchangeUtilities (1.2.1):
-    - GoogleSymbolUtilities (~> 1.0)
-  - GoogleIPhoneUtilities (1.2.1):
-    - GoogleSymbolUtilities (~> 1.0)
-    - GoogleUtilities (~> 1.0)
-  - GoogleNetworkingUtilities (1.2.1):
-    - GoogleSymbolUtilities (~> 1.0)
-  - GoogleParsingUtilities (1.1.1):
-    - GoogleNetworkingUtilities (~> 1.0)
-    - GoogleSymbolUtilities (~> 1.0)
-  - GoogleSignIn (4.0.0):
-    - GoogleAppUtilities (~> 1.1)
-    - GoogleAuthUtilities (~> 2.0)
-    - GoogleNetworkingUtilities (~> 1.2)
-    - GoogleUtilities (~> 1.3)
-  - GoogleSymbolUtilities (1.1.1)
-  - GoogleUtilities (1.3.1):
-    - GoogleSymbolUtilities (~> 1.0)
+  - Firebase/Auth (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.2)
+  - Firebase/Core (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.4.1):
+    - FirebaseCore (= 5.0.6)
+  - Firebase/Database (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.2)
+  - Firebase/Messaging (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.0.3)
+  - Firebase/Storage (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseStorage (= 3.0.0)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseAuth (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (5.0.6):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (3.1.1):
+    - FirebaseCore (~> 5.0)
+  - FirebaseMessaging (3.0.3):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - FirebaseStorage (3.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleSignIn (4.1.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.4)
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.15):
+    - GTMSessionFetcher/Full (= 1.1.15)
+  - GTMSessionFetcher/Core (1.1.15)
+  - GTMSessionFetcher/Full (1.1.15):
+    - GTMSessionFetcher/Core (= 1.1.15)
   - HanekeSwift (0.10.1)
-  - ImagePicker (2.0.0)
-  - JGProgressHUD (1.4)
+  - ImagePicker (3.0.0)
+  - JGProgressHUD (2.0.3)
   - KILabel (1.0.0)
-  - MXParallaxHeader (0.6.0)
+  - leveldb-library (1.20)
+  - MXParallaxHeader (0.6.1)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.6.0)
   - Spring (1.0.3)
   - SWRevealViewController (2.3.0)
 
@@ -100,42 +111,41 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ChameleonFramework:
-    :commit: dcf98f9bf3a632a7f40679b7da46f09681e48526
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
     :git: https://github.com/ViccAlexander/Chameleon.git
   HanekeSwift:
-    :commit: 1157a124ec699f4ad926cb054f1d0bfce88ae7a9
+    :commit: 2f6d87f1f725d204d85cb34492e8c399cd5a200f
     :git: https://github.com/Haneke/HanekeSwift.git
   Spring:
-    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :commit: 8201b5c93bd7ebdf4cd18160bcde1e6e88c2be64
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Firebase: 6250071f0e2440a5c4c67b8cb6b868f868237ac3
-  FirebaseAnalytics: 0fd6532cb2c3d03cd5cf26ad295ccb091efd3104
-  FirebaseAuth: 5efddc3fae47042b73585f083f956462be4f5b8e
-  FirebaseDatabase: 59bea2e7dfd81b3b8b2f8e396caf1a52c2ced6f7
-  FirebaseInstanceID: a9d923f3d0b6fbf9fac89310860357aaadc34be5
-  FirebaseMessaging: 8a92e9ea70673605aa7d1803d2d5aa3eb946009c
-  FirebaseStorage: fa2a87dee81f682f553af6839daa37a750e65f6a
-  GoogleAppUtilities: f1730f91f67767b453c289577040dd3f425ffdc7
-  GoogleAuthUtilities: d7a19615cd7627688afcf181737f1011ee8b5a23
-  GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
-  GoogleIPhoneUtilities: 63f25e93a3ddcb66884d182aab3a660d98f1479b
-  GoogleNetworkingUtilities: 3e83269048cfb498dc7ec83ab36813360965c74f
-  GoogleParsingUtilities: 30b3896f9ee167dc78747f013d3de157ced1cadf
-  GoogleSignIn: 09036ed61f8e75f1424100d63f7719480b2428c3
-  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
-  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
+  Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
+  FirebaseCore: 4c28e3b9708ba48a765e76515f913a71596eb5dd
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
+  FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
+  FirebaseMessaging: f43eb0c0e1da096e659de6f713038e74862a62cd
+  FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
-  ImagePicker: 81175d36c2852cb543cb4f5d6c19e28f3e8d90eb
-  JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
+  ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
   KILabel: 84049969642d4ac1061ebe38ad4c0da37fed108b
-  MXParallaxHeader: 2997592b8349baf8557ae0e4346f6b17e141de39
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
 PODFILE CHECKSUM: b55b7a5ada65b7b68ab6369d22feeffc6b0e321a
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.4.0

@@ -2,8 +2,8 @@
 //  PendingInvitesViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -24,7 +24,7 @@ class PendingInvitesViewController: UIViewController {
         setupNavBar()
         setUpTableView()
         setupNegativeStateView()
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
             
             if currUser.receivedInviteIds?.count == 0 {
@@ -38,6 +38,7 @@ class PendingInvitesViewController: UIViewController {
                     return
                 }
                 
+                print("hi1")
                 self.invites.append(retrievedInvite)
                 let index = self.invites.index(where: {$0.inviteId == retrievedInvite.inviteId})
                 indexPaths.append(IndexPath(item: index!, section: 0))
@@ -83,7 +84,7 @@ class PendingInvitesViewController: UIViewController {
         
         navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         navigationItem.title = "Invites"
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        let titleDict: NSDictionary = [kCTForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
         navigationController?.navigationBar.layer.shadowColor = Constants.navBarShadowColor.cgColor
         navigationController?.navigationBar.layer.shadowOpacity = 0.9

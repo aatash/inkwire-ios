@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/6/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
@@ -16,7 +16,7 @@ class Invite {
     var journalId: String?
     var isContributor: Bool?
     var inviteId: String?
-    let dbRef = FIRDatabase.database().reference()
+    let dbRef = Database.database().reference()
     
     /**
      Initialize an invite object using dictionary retrieved from database.
@@ -52,7 +52,7 @@ class Invite {
      */
     convenience init(receiverIdValue: String, isAContributor: Bool, journalIdValue: String) {
         self.init()
-        senderId = FIRAuth.auth()?.currentUser?.uid
+        senderId = Auth.auth().currentUser?.uid
         receiverId = receiverIdValue
         isContributor = isAContributor
         journalId = journalIdValue
@@ -130,6 +130,7 @@ class Invite {
      
      */
     private func modifyReceiverDataOnReject(withBlock: @escaping (Bool) -> Void) {
+        print("hi3")
         InkwireDBUtils.getUser(withId: receiverId!, withBlock: { retrievedReceiver -> Void in
             if let index = retrievedReceiver.receivedInviteIds?.index(of: self.inviteId!) {
                 retrievedReceiver.receivedInviteIds?.remove(at: index)
@@ -168,7 +169,7 @@ class Invite {
      */
     private func deleteFromDatabase(withBlock: @escaping (Bool) -> Void) {
         if inviteId != nil {
-            let inviteRef = FIRDatabase.database().reference().child("Invites/\(inviteId)")
+            let inviteRef = Database.database().reference().child("Invites/\(String(describing: inviteId))")
             inviteRef.removeValue(completionBlock: { (error, ref) in
                 if error != nil {
                     withBlock(false)
@@ -217,18 +218,57 @@ class Invite {
         
         dbRef.child("notifications/").updateChildValues([notificationId: notificationDict])
         
-        dbRef.child("Invites/").updateChildValues([inviteId!: inviteDict], withCompletionBlock: { (error, ref) -> Void in
-            if error != nil {
-                print("An error occurred while sending the invite: \(error)")
-                withBlock(false)
-            } else {
-                InkwireDBUtils.getUser(withId: self.receiverId!, withBlock: { receiver -> Void in
-                    receiver.receivedInviteIds?.append(self.inviteId!)
-                    receiver.saveToDB(withBlock: { updatedUser -> Void in
-                        withBlock(true)
-                    })
-                })
+        
+        var receivedInviteIds = [String]()
+        print("1")
+        dbRef.child("Users").child(self.receiverId!).child("receivedInviteIds").observeSingleEvent(of: .value, with: { (snapshot) in
+            print("2")
+            if snapshot.exists() {
+                if let curReceivedInviteIds = snapshot.value as? [String] {
+                    receivedInviteIds = curReceivedInviteIds
+                }
             }
+
+//            receivedInviteIds = receiver.receivedInviteIds ?? receivedInviteIds
+            receivedInviteIds.append(self.inviteId!)
+            
+            let childUpdates = ["/Users/\(self.receiverId!)/receivedInviteIds": receivedInviteIds,
+                                "/Invites/\(self.inviteId!)/": inviteDict] as [String : Any]
+            print(childUpdates)
+            self.dbRef.updateChildValues(childUpdates, withCompletionBlock: { (error, ref) -> Void in
+                if error != nil {
+                    print("An error occurred while sending the invite: \(String(describing: error))")
+                    withBlock(false)
+                } else {
+                    withBlock(true)
+                }
+            })
         })
+
+        
+//        let key = ref.child("posts").childByAutoId().key
+//        let post = ["uid": userID,
+//                    "author": username,
+//                    "title": title,
+//                    "body": body]
+//        let childUpdates = ["/posts/\(key)": post,
+//                            "/user-posts/\(userID)/\(key)/": post]
+//        ref.updateChildValues(childUpdates)
+//        
+//        
+//        
+//        dbRef.child("Invites/").updateChildValues([inviteId!: inviteDict], withCompletionBlock: { (error, ref) -> Void in
+//            if error != nil {
+//                print("An error occurred while sending the invite: \(String(describing: error))")
+//                withBlock(false)
+//            } else {
+//                InkwireDBUtils.getUser(withId: self.receiverId!, withBlock: { receiver -> Void in
+//                    receiver.receivedInviteIds?.append(self.inviteId!)
+//                    receiver.saveToDB(withBlock: { updatedUser -> Void in
+//                        withBlock(true)
+//                    })
+//                })
+//            }
+//        })
     }
 }

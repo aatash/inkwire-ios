@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/6/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
@@ -19,7 +19,7 @@ class Post {
     var postId: String?
     var likedUserIds: [String]?
     private var postImage: UIImage?
-    let dbRef = FIRDatabase.database().reference()
+    let dbRef = Database.database().reference()
     
     /**
      Initialize a post object using dictionary retrieved from database.
@@ -70,7 +70,7 @@ class Post {
      */
     init(text: String) {
         date = Date()
-        posterId = FIRAuth.auth()?.currentUser?.uid
+        posterId = Auth.auth().currentUser?.uid
         commentIds = [String]()
         content = text
         likedUserIds = [String]()
@@ -84,7 +84,7 @@ class Post {
      */
     init(image: UIImage) {
         date = Date()
-        posterId = FIRAuth.auth()?.currentUser?.uid
+        posterId = Auth.auth().currentUser?.uid
         commentIds = [String]()
         postImage = image
         likedUserIds = [String]()
@@ -99,7 +99,7 @@ class Post {
      */
     init(text: String, image: UIImage) {
         date = Date()
-        posterId = FIRAuth.auth()?.currentUser?.uid
+        posterId = Auth.auth().currentUser?.uid
         commentIds = [String]()
         content = text
         postImage = image
@@ -161,7 +161,7 @@ class Post {
         let notificationId = dbRef.child("notifications/").childByAutoId().key
         
         let notificationMessage = "Someone commented on your post!"
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         let notificationDict: [String: Any] = ["attempts": 0,
                                                "key": notificationId,
                                                "message": notificationMessage,
@@ -281,20 +281,25 @@ class Post {
      
      */
     private func uploadImage(withBlock: @escaping (String) -> Void) {
-        let imageRef = FIRStorage.storage().reference().child("images/\(postId!).jpg")
-        imageRef.put(UIImageJPEGRepresentation(postImage!, 0.9)!, metadata: nil) { metadata, error in
+        let imageRef = Storage.storage().reference().child("images/\(postId!).jpg")
+        imageRef.putData(UIImageJPEGRepresentation(postImage!, 0.9)!, metadata: nil) { metadata, error in
             if (error != nil) {
                 print("Error while uploading image: \(error)")
             } else {
                 print("no error while uploading")
-                let downloadURL = metadata?.downloadURL()
-                withBlock((downloadURL?.absoluteString)!)
+                imageRef.downloadURL { url, error in
+                    if let error = error {
+                        print("Error while fetching Download URL image: \(error)")
+                    } else {
+                        withBlock((url!.absoluteString))
+                    }
+                }
             }
         }
     }
     
     func like() {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         if (likedUserIds?.contains(currUserId!))! {
             return
         }
@@ -318,7 +323,7 @@ class Post {
     }
     
     func unlike() {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         if (likedUserIds?.contains(currUserId!))! {
             let index = likedUserIds?.index(where: {$0 == currUserId})
             likedUserIds?.remove(at: index!)

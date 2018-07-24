@@ -2,15 +2,16 @@
 //  Constants.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
 
 struct Constants {
     
-    static let appColor = UIColor(hex: "#6C6FF8")
+//    static let appColor = UIColor(hex: "#6C6FF8")
+    static let appColor = UIColor(hex: "#2D2E31")
     static let backgroundColor = UIColor(hex: "#EEF2F5")
     static let unlikeColor = UIColor(hex: "#C3CFD7")
     static let likeColor = UIColor(hex: "#2388CB")

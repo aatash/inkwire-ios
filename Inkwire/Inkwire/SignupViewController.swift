@@ -2,8 +2,8 @@
 //  SignupViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import Firebase
 import JGProgressHUD
 class SignupViewController: UIViewController, UINavigationControllerDelegate, GIDSignInUIDelegate {
     
-    var ref: FIRDatabaseReference!
+    var ref: DatabaseReference!
     var screenBounds: CGRect!
     var signUpButton: UIButton!
     var googleButton: UIButton!
@@ -27,15 +27,15 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, GI
         GIDSignIn.sharedInstance().delegate = self
         screenBounds = UIScreen.main.bounds
         
-        let gradientOverlay = UIImageView(frame: screenBounds)
-        gradientOverlay.image = UIImage(named: "gradientOverlay")
-        view.insertSubview(gradientOverlay, at: 0)
+        let blackGradientOverlay = UIImageView(frame: screenBounds)
+        blackGradientOverlay.image = UIImage(named: "blackGradientOverlay")
+        view.insertSubview(blackGradientOverlay, at: 0)
         
         let backgroundImage = UIImageView(frame: screenBounds)
         backgroundImage.image = UIImage(named: "welcomeWallpaper")
         view.insertSubview(backgroundImage, at: 0)
         
-        ref = FIRDatabase.database().reference()
+        ref = Database.database().reference()
         
         setUpSignUpButton()
         setUpGoogleButton()
@@ -73,16 +73,16 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, GI
     }
     
     func googleSignIn() {
-        hud?.textLabel.text = "Signing up..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Signing up..."
+        hud.show(in: view)
         GIDSignIn.sharedInstance().signIn()
     }
     
     func setUpNeedLogin() {
         needLogin = UIButton(frame: CGRect(x: (view.frame.width - 240)/2, y: googleButton.frame.maxY + 10, width: 240, height: 18))
         let needLoginString = "Already have an account? Sign in"
-        let myAttribute = [ NSForegroundColorAttributeName: UIColor.white ]
-        let needLoginAttrString = NSAttributedString(string: needLoginString, attributes: myAttribute)
+        let myAttribute = [ kCTForegroundColorAttributeName: UIColor.white ]
+        let needLoginAttrString = NSAttributedString(string: needLoginString, attributes: myAttribute as [NSAttributedStringKey : Any])
         needLogin.setAttributedTitle(needLoginAttrString, for: .normal)
         needLogin.titleLabel!.font = UIFont(name: "SFUIText-Light", size: 15)
         needLogin.addTarget(self, action: #selector(signInTapped), for: .touchUpInside)
@@ -161,14 +161,14 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, GI
     }
     
     func signupButtonTapped() {
-        hud?.textLabel.text = "Signing up..."
-        hud?.show(in: view)
-        FIRAuth.auth()!.createUser(withEmail: emailTextField.text!, password: passTextField.text!, completion: { user, error in
-            self.hud?.dismiss()
+        hud.textLabel.text = "Signing up..."
+        hud.show(in: view)
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passTextField.text!, completion: { user, error in
+            self.hud.dismiss()
             if error == nil {
-                self.ref.child("Users/\(user!.uid)/email").setValue(self.emailTextField.text!)
-                self.ref.child("Users/\(user!.uid)/fullName").setValue(self.nameTextField.text!)
-                self.ref.child("Users/\(user!.uid)/profPicUrl").setValue(user?.photoURL)
+                self.ref.child("Users/\(user?.user.uid)/email").setValue(self.emailTextField.text!)
+                self.ref.child("Users/\(user?.user.uid)/fullName").setValue(self.nameTextField.text!)
+                self.ref.child("Users/\(user?.user.uid)/profPicUrl").setValue(user?.user.photoURL)
                 self.performSegue(withIdentifier: "toProfPic", sender: self)
             } else {
                 let alert = UIAlertController(title: "", message: error!.localizedDescription, preferredStyle: .alert)
@@ -182,8 +182,8 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, GI
     
     
     func checkHasUsername(withBlock: @escaping (Bool) -> Void) {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
-        FIRDatabase.database().reference().child("Users/\(currUserId!)").observe(.value, with: { snapshot -> Void in
+        let currUserId = Auth.auth().currentUser?.uid
+        Database.database().reference().child("Users/\(currUserId!)").observe(.value, with: { snapshot -> Void in
             if snapshot.exists() {
                 if let userDict = snapshot.value as? [String: Any] {
                     if userDict["fullName"] == nil {
@@ -217,8 +217,8 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, GI
     }
     
     func saveUsername(name: String) {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
-        FIRDatabase.database().reference().child("Users/\(currUserId!)/fullName").setValue(name)
+        let currUserId = Auth.auth().currentUser?.uid
+        Database.database().reference().child("Users/\(currUserId!)/fullName").setValue(name)
     }
 
     
@@ -240,21 +240,21 @@ extension SignupViewController: GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         if let error = error {
-            self.hud?.dismiss()
+            self.hud.dismiss()
             print("error while signing in with google: \(error)")
             return
         }
         
         guard let authentication = user.authentication else { return }
-        let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                           accessToken: authentication.accessToken)
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+        Auth.auth().signIn(with: credential) { (user, error) in
             if let error = error {
-                self.hud?.dismiss()
+                self.hud.dismiss()
                 print("error while signing in with google: \(error)")
                 return
             }
-            let dbRef = FIRDatabase.database().reference()
+            let dbRef = Database.database().reference()
             dbRef.child("Users/\(user!.uid)/email").setValue(user?.email!)
             
             
@@ -264,17 +264,17 @@ extension SignupViewController: GIDSignInDelegate {
             
             if user?.displayName != nil {
                 dbRef.child("Users/\(user!.uid)/fullName").setValue(user?.displayName!)
-                self.hud?.dismiss()
+                self.hud.dismiss()
                 self.performSegue(withIdentifier: "toProfPic", sender: self)
             } else {
                 self.checkHasUsername(withBlock: { hasUsername -> Void in
                     if !hasUsername {
                         DispatchQueue.main.async {
-                            self.hud?.dismiss()
+                            self.hud.dismiss()
                             self.requestUsername()
                         }
                     } else {
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                         self.performSegue(withIdentifier: "toProfPic", sender: self)
                     }
                 })

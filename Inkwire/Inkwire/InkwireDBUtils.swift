@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/12/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
@@ -40,7 +40,7 @@ class InkwireDBUtils {
      
      */
     static func getUser(withId: String, withBlock: @escaping (User) -> Void) {
-        FIRDatabase.database().reference().child("Users/\(withId)").observe(.value, with: { snapshot in
+        Database.database().reference().child("Users/\(withId)").observe(.value, with: { snapshot in
             if snapshot.exists() {
                 if let userDict = snapshot.value as? [String: Any] {
                     let retrievedUser = User(key: snapshot.key, userDict: userDict)
@@ -53,7 +53,7 @@ class InkwireDBUtils {
     }
     
     static func getUserOnce(withId: String, withBlock: @escaping (User) -> Void) {
-        FIRDatabase.database().reference().child("Users/\(withId)").observeSingleEvent(of: .value, with: { snapshot in
+        Database.database().reference().child("Users/\(withId)").observeSingleEvent(of: .value, with: { snapshot in
             if snapshot.exists() {
                 if let userDict = snapshot.value as? [String: Any] {
                     let retrievedUser = User(key: snapshot.key, userDict: userDict)
@@ -74,16 +74,21 @@ class InkwireDBUtils {
      
      */
     static func uploadImage(image: UIImage, withBlock: @escaping (String) -> Void) {
-        let storageRef = FIRStorage.storage().reference()
+        let storageRef = Storage.storage().reference()
         let data = UIImageJPEGRepresentation(image, 0.9)
         let timeStamp = String(describing: Date())
         let imageRef = storageRef.child("images/\(timeStamp).jpg")
-        imageRef.put(data!, metadata: nil) { metadata, error in
+        imageRef.putData(data!, metadata: nil) { metadata, error in
             if (error != nil) {
                 print("an error occurred while uploading the image: \(error)")
             } else {
-                let downloadURL = metadata!.downloadURL()
-                withBlock((downloadURL?.absoluteString)!)
+                storageRef.downloadURL { url, error in
+                    if let error = error {
+                        print("Error while fetching Download URL image: \(error)")
+                    } else {
+                        withBlock((url!.absoluteString))
+                    }
+                }
             }
         }
     }
@@ -97,7 +102,7 @@ class InkwireDBUtils {
      
      */
     static func getUsersByName(prefix: String, withBlock: @escaping ([User]) -> Void) {
-        var query = FIRDatabase.database().reference().child("Users/").queryOrdered(byChild: "fullName")
+        var query = Database.database().reference().child("Users/").queryOrdered(byChild: "fullName")
         if prefix != "" {
             query = query.queryStarting(atValue: prefix, childKey: "fullName").queryEnding(atValue: "\(prefix)\u{f8ff}")
         }
@@ -127,7 +132,7 @@ class InkwireDBUtils {
      
      */
     static func checkNumPendingInvites(withBlock: @escaping (Int) -> Void) {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         getUser(withId: currUserId!, withBlock: { currUser -> Void in
             withBlock((currUser.receivedInviteIds?.count)!)
         })
@@ -142,7 +147,7 @@ class InkwireDBUtils {
      
      */
     static func getJournal(withId: String, withBlock: @escaping (Journal) -> Void) {
-        FIRDatabase.database().reference().child("Journals/\(withId)").observe(.value, with: { snapshot in
+        Database.database().reference().child("Journals/\(withId)").observe(.value, with: { snapshot in
             if snapshot.exists() {
                 if let journalDict = snapshot.value as? [String: Any] {
                     let retrievedJournal = Journal(key: snapshot.key, journalDict: journalDict)
@@ -163,7 +168,8 @@ class InkwireDBUtils {
      */
     static func pollForInvites(withIds: [String], withBlock: @escaping (Invite) -> Void) {
         for invID in withIds {
-            FIRDatabase.database().reference().child("Invites/\(invID)").observe(.value, with: { snapshot in
+            Database.database().reference().child("Invites/\(invID)").observe(.value, with: { snapshot in
+                print("hi5")
                 if snapshot.exists() {
                     if let inviteDict = snapshot.value as? [String: Any] {
                         let retrievedInvite = Invite(key: snapshot.key, inviteDict: inviteDict)
@@ -184,7 +190,7 @@ class InkwireDBUtils {
      
      */
     static func pollForJournals(withIds: [String], withBlock: @escaping (Journal) -> Void) {
-        let dbRef = FIRDatabase.database().reference()
+        let dbRef = Database.database().reference()
         for journalID in withIds {
             print("journal id is")
             print(journalID)
@@ -205,22 +211,22 @@ class InkwireDBUtils {
      */
 
     static func updateTokenIfNeeded() {
-        if let user = FIRAuth.auth()?.currentUser {
-            let ref = FIRDatabase.database().reference()
+        if let user = Auth.auth().currentUser {
+            let ref = Database.database().reference()
             ref.child("notification_ids/\((user.uid))").observeSingleEvent(of: .value, with: { (snapshot) in
-                if FIRInstanceID.instanceID().token() == nil {
+                if InstanceID.instanceID().token() == nil {
                     return
                 }
                 if snapshot.exists() {
                     let notificationIDsArray = snapshot.value as! NSMutableArray
                     
-                    if notificationIDsArray.index(of: FIRInstanceID.instanceID().token()!) == NSNotFound {
-                        notificationIDsArray.add(FIRInstanceID.instanceID().token()!)
+                    if notificationIDsArray.index(of: InstanceID.instanceID().token()!) == NSNotFound {
+                        notificationIDsArray.add(InstanceID.instanceID().token()!)
                         
                         ref.child("notification_ids/\(user.uid)").setValue(notificationIDsArray)
                     }
                 } else {
-                    let saveArray: NSArray = NSArray(object: FIRInstanceID.instanceID().token()!)
+                    let saveArray: NSArray = NSArray(object: InstanceID.instanceID().token()!)
                     ref.child("notification_ids/\(user.uid)").setValue(saveArray)
                 }
                 

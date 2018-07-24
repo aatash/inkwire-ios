@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Kevin Jiang on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -23,9 +23,9 @@ class WelcomeViewController: UIViewController, UINavigationControllerDelegate {
 
         screenBounds = UIScreen.main.bounds
         
-        let gradientOverlay = UIImageView(frame: screenBounds)
-        gradientOverlay.image = UIImage(named: "gradientOverlay")
-        view.insertSubview(gradientOverlay, at: 0)
+        let blackGradientOverlay = UIImageView(frame: screenBounds)
+        blackGradientOverlay.image = UIImage(named: "blackGradientOverlay")
+        view.insertSubview(blackGradientOverlay, at: 0)
         
         let backgroundImage = UIImageView(frame: screenBounds)
         backgroundImage.image = UIImage(named: "welcomeWallpaper")
@@ -91,9 +91,9 @@ class WelcomeViewController: UIViewController, UINavigationControllerDelegate {
         view.addSubview(scrollView)
         
         let iconView = UIView(frame: CGRect(x: scrollView.frame.minX, y: 0, width: view.frame.width, height: scrollView.frame.height))
-        let iconImageView = UIImageView(frame: CGRect(x: (view.frame.width - 68)/2, y: 90, width: 100, height: 100))
+        let iconImageView = UIImageView(frame: CGRect(x: (view.frame.width / 2) - 100, y: 0, width: 200, height: 100))
         iconImageView.image = UIImage(named: "iconwhite")
-        iconImageView.contentMode = .scaleAspectFill
+        iconImageView.contentMode = .scaleAspectFit
         iconView.addSubview(iconImageView)
         scrollView.addSubview(iconView)
 

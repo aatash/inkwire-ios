@@ -2,8 +2,8 @@
 //  LoginViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -41,9 +41,9 @@ class LoginViewController: UIViewController {
     }
     
     func backgroundSetup() {
-        let gradientOverlay = UIImageView(frame: view.frame)
-        gradientOverlay.image = UIImage(named: "gradientOverlay")
-        view.insertSubview(gradientOverlay, at: 0)
+        let blackGradientOverlay = UIImageView(frame: view.frame)
+        blackGradientOverlay.image = UIImage(named: "blackGradientOverlay")
+        view.insertSubview(blackGradientOverlay, at: 0)
         
         let backgroundImage = UIImageView(frame: view.frame)
         backgroundImage.image = UIImage(named: "welcomeWallpaper")
@@ -78,8 +78,8 @@ class LoginViewController: UIViewController {
     }
     
     func googleSignIn() {
-        hud?.textLabel.text = "Logging in..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Logging in..."
+        hud.show(in: view)
         GIDSignIn.sharedInstance().signIn()
     }
     
@@ -136,10 +136,10 @@ class LoginViewController: UIViewController {
     }
     
     func loginButtonTapped() {
-        hud?.textLabel.text = "Logging in..."
-        hud?.show(in: view)
-        FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            self.hud?.dismiss()
+        hud.textLabel.text = "Logging in..."
+        hud.show(in: view)
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            self.hud.dismiss()
             if error == nil {
                 self.performSegue(withIdentifier: "toJournalsFromLogin", sender: self)
             } else {
@@ -159,7 +159,7 @@ class LoginViewController: UIViewController {
         }
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
         let nextAction: UIAlertAction = UIAlertAction(title: "OK", style: .default) { action -> Void in
-            FIRAuth.auth()?.sendPasswordReset(withEmail: emailField.text!, completion: { (error) in
+            Auth.auth().sendPasswordReset(withEmail: emailField.text!, completion: { (error) in
                 let alertTitle = error == nil ? "Success" : "Failed to Reset Password"
                 let alertMessage = error == nil ? "Check your email to finish resetting your password." : "Please try again later."
                 let finalAlert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
@@ -173,8 +173,8 @@ class LoginViewController: UIViewController {
     }
 
     func checkHasUsername(withBlock: @escaping (Bool) -> Void) {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
-        FIRDatabase.database().reference().child("Users/\(currUserId!)").observe(.value, with: { snapshot -> Void in
+        let currUserId = Auth.auth().currentUser?.uid
+        Database.database().reference().child("Users/\(currUserId!)").observe(.value, with: { snapshot -> Void in
             if snapshot.exists() {
                 if let userDict = snapshot.value as? [String: Any] {
                     if userDict["fullName"] == nil {
@@ -207,8 +207,8 @@ class LoginViewController: UIViewController {
     }
     
     func saveUsername(name: String) {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
-        FIRDatabase.database().reference().child("Users/\(currUserId!)/fullName").setValue(name)
+        let currUserId = Auth.auth().currentUser?.uid
+        Database.database().reference().child("Users/\(currUserId!)/fullName").setValue(name)
     }
 }
 
@@ -231,21 +231,21 @@ extension LoginViewController: GIDSignInDelegate, GIDSignInUIDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         if let error = error {
-            self.hud?.dismiss()
+            self.hud.dismiss()
             print("error while signing in with google: \(error)")
             return
         }
         
         guard let authentication = user.authentication else { return }
-        let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                           accessToken: authentication.accessToken)
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+        Auth.auth().signIn(with: credential) { (user, error) in
             if let error = error {
-                self.hud?.dismiss()
+                self.hud.dismiss()
                 print("error while signing in with google: \(error)")
                 return
             }
-            let dbRef = FIRDatabase.database().reference()
+            let dbRef = Database.database().reference()
             dbRef.child("Users/\(user!.uid)/email").setValue(user?.email!)
             
             
@@ -254,18 +254,18 @@ extension LoginViewController: GIDSignInDelegate, GIDSignInUIDelegate {
             }
             
             if user?.displayName != nil {
-                self.hud?.dismiss()
+                self.hud.dismiss()
                 dbRef.child("Users/\(user!.uid)/fullName").setValue(user?.displayName!)
                 self.performSegue(withIdentifier: "toJournalsFromLogin", sender: self)
             } else {
                 self.checkHasUsername(withBlock: { hasUsername -> Void in
                     if !hasUsername {
                         DispatchQueue.main.async {
-                            self.hud?.dismiss()
+                            self.hud.dismiss()
                             self.requestUsername()
                         }
                     } else {
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                         self.performSegue(withIdentifier: "toJournalsFromLogin", sender: self)
                     }
                 })

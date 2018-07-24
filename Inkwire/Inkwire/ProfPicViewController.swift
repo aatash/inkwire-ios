@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 12/19/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -25,9 +25,9 @@ class ProfPicViewController: UIViewController {
         backgroundImage.image = UIImage(named: "welcomeWallpaper")
         view.addSubview(backgroundImage)
 
-        let gradientOverlay = UIImageView(frame: view.frame)
-        gradientOverlay.image = UIImage(named: "gradientOverlay")
-        view.addSubview(gradientOverlay)
+        let blackGradientOverlay = UIImageView(frame: view.frame)
+        blackGradientOverlay.image = UIImage(named: "blackGradientOverlay")
+        view.addSubview(blackGradientOverlay)
         
         profPicImageView = UIImageView(frame: CGRect(x: 0, y: 150, width: 180, height: 180))
         profPicImageView.center.x = view.center.x
@@ -68,16 +68,16 @@ class ProfPicViewController: UIViewController {
     }
     
     func finishButtonTapped() {
-        hud?.textLabel.text = "Saving..."
-        hud?.show(in: view)
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        hud.textLabel.text = "Saving..."
+        hud.show(in: view)
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.uploadImage(image: profPicImageView.image!, withBlock: { downloadUrlString -> Void in
-            FIRDatabase.database().reference().child("Users/\(currUserId!)/profPicUrl").setValue(downloadUrlString, withCompletionBlock: { (error, ref) -> Void in
+            Database.database().reference().child("Users/\(currUserId!)/profPicUrl").setValue(downloadUrlString, withCompletionBlock: { (error, ref) -> Void in
                 if error == nil {
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                     self.performSegue(withIdentifier: "toJournalsFromProfPic", sender: self)
                 } else {
-                    print("An error occurred while saving the image url: \(error)")
+                    print("An error occurred while saving the image url: \(String(describing: error))")
                 }
             })
         })

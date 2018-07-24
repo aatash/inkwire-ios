@@ -33,13 +33,20 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "inkwireicon1x.png",
+      "filename" : "app-cicon@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "app-icon@3x.png",
       "scale" : "3x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "welcomeWallpaper.png",
+      "scale" : "1x"
     }
   ],
   "info" : {

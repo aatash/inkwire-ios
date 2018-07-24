@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 12/21/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -42,7 +42,7 @@ class MenuController: UIViewController, SWRevealViewControllerDelegate {
         UIApplication.shared.isStatusBarHidden = false
     }
     override func viewWillAppear(_ animated: Bool) {
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
             DispatchQueue.main.async {
                 let cell = self.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! HeaderTableViewCell
@@ -93,7 +93,7 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
             
             cell.awakeFromNib()
             
-            let currUserId = FIRAuth.auth()?.currentUser?.uid
+            let currUserId = Auth.auth().currentUser?.uid
             InkwireDBUtils.getUser(withId: currUserId!, withBlock: { currUser -> Void in
                 DispatchQueue.main.async {
                     cell.usernameLabel.text = currUser.name!

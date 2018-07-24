@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cvu-ZP-bQj">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cvu-ZP-bQj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,7 +82,7 @@
                 <navigationController id="PbT-i7-VRe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Journals" image="myJournals" id="uoC-lb-bfP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7z1-FL-crr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -157,8 +160,8 @@
         <scene sceneID="Qf9-eq-XL2">
             <objects>
                 <navigationController id="rjc-4d-Bym" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m5e-64-7HJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="m5e-64-7HJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -315,8 +318,8 @@
         <scene sceneID="G7y-Bo-m4k">
             <objects>
                 <navigationController id="TxO-Jj-QzH" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xmF-0l-paG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xmF-0l-paG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -331,8 +334,8 @@
         <scene sceneID="KNY-h8-3lz">
             <objects>
                 <navigationController id="Ock-BC-kHd" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZaK-Ky-dqm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZaK-Ky-dqm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -391,8 +394,8 @@
             <objects>
                 <navigationController id="Qab-IN-pKF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Subscribed" image="subscribed" id="K3v-31-s3w"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gU6-5M-Bfg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gU6-5M-Bfg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -449,8 +452,8 @@
         <scene sceneID="dtn-Kv-kSk">
             <objects>
                 <navigationController id="r9A-lS-Kiw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZr-Zt-m3F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rZr-Zt-m3F">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -465,8 +468,8 @@
         <scene sceneID="a6G-bE-t6k">
             <objects>
                 <navigationController id="0JL-wO-GCu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="30t-FD-fNQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="30t-FD-fNQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -479,13 +482,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="myJournals" width="16" height="16"/>
-        <image name="subscribed" width="16" height="16"/>
+        <image name="myJournals" width="24" height="29"/>
+        <image name="subscribed" width="28" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="59k-dj-BSl"/>
+        <segue reference="WwL-x2-QRj"/>
         <segue reference="zsl-hi-0bm"/>
-        <segue reference="l24-nC-7SR"/>
         <segue reference="AW5-ne-hX2"/>
+        <segue reference="59k-dj-BSl"/>
     </inferredMetricsTieBreakers>
 </document>

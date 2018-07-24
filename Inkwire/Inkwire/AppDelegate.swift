@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Tarun Khasnavis on 11/5/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -17,16 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.statusBarStyle = .lightContent
-        FIRApp.configure()
+        FirebaseApp.configure()
  
-        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         
         let settings: UIUserNotificationSettings =
             UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         NotificationCenter.default.addObserver(self, selector: #selector(tokenRefreshNotification(notification:)),
-                         name: NSNotification.Name.firInstanceIDTokenRefresh, object: nil)
+                                               name: NSNotification.Name.InstanceIDTokenRefresh, object: nil)
         
         InkwireDBUtils.updateTokenIfNeeded()
         
@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func connectToFcm() {
-        FIRMessaging.messaging().connect { (error) in
+        Messaging.messaging().connect { (error) in
             if (error != nil) {
                 print("Unable to connect with FCM. \(error)")
             } else {
@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func tokenRefreshNotification(notification: NSNotification) {
         print("getting in token refreshnotification")
-        if let refreshedToken = FIRInstanceID.instanceID().token() {
+        if let refreshedToken = InstanceID.instanceID().token() {
             print("InstanceID token: \(refreshedToken)")
             
             let userDefaults = UserDefaults.standard
@@ -92,7 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        FIRInstanceID.instanceID().setAPNSToken(deviceToken as Data, type: FIRInstanceIDAPNSTokenType.unknown)
+        Messaging.messaging().apnsToken = deviceToken
     }
  
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {

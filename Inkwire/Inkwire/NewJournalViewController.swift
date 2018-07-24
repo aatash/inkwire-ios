@@ -2,8 +2,8 @@
 //  NewExperieinceViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ import ImagePicker
 class NewJournalViewController: UIViewController, UINavigationControllerDelegate {
     
     var selectedImageView: UIImageView!
-    var gradientOverlay: UIImageView!
+    var blackGradientOverlay: UIImageView!
     var journalNameTextField: UITextField!
     var journalImage: UIImage?
     
@@ -26,10 +26,10 @@ class NewJournalViewController: UIViewController, UINavigationControllerDelegate
         selectedImageView.image = journalImage
         view.addSubview(selectedImageView)
         
-        gradientOverlay = UIImageView(frame: view.frame)
-        gradientOverlay.contentMode = .scaleToFill
-        gradientOverlay.image = UIImage(named: "blackgradient")
-        view.addSubview(gradientOverlay)
+        blackGradientOverlay = UIImageView(frame: view.frame)
+        blackGradientOverlay.contentMode = .scaleToFill
+        blackGradientOverlay.image = UIImage(named: "blackgradient")
+        view.addSubview(blackGradientOverlay)
         
         journalNameTextField = UITextField(frame: CGRect(x: 20, y: view.frame.height/2, width: view.frame.width - 40, height: 60))
         journalNameTextField.borderStyle = .none
@@ -38,7 +38,7 @@ class NewJournalViewController: UIViewController, UINavigationControllerDelegate
         journalNameTextField.font = UIFont(name: "SFUIText-Regular", size: 25)
         journalNameTextField.delegate = self
         journalNameTextField.returnKeyType = .next
-        let nameAttrStr = NSAttributedString(string: "Name this journal...", attributes: [NSForegroundColorAttributeName: UIColor(hex: "#DDDDDD")])
+        let nameAttrStr = NSAttributedString(string: "Name this journal...", attributes: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor(hex: "#DDDDDD")])
         journalNameTextField.attributedPlaceholder = nameAttrStr
         view.addSubview(journalNameTextField)
         
@@ -59,7 +59,7 @@ class NewJournalViewController: UIViewController, UINavigationControllerDelegate
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "x")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(dismissVC))
         navigationItem.title = "New Journal"
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        let titleDict: NSDictionary = [kCTForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
     }
     
@@ -94,7 +94,7 @@ extension NewJournalViewController: UITextFieldDelegate {
     func keyboardWasShown(_ notification: Notification) {
         if let userInfo = notification.userInfo {
             if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-                gradientOverlay.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - keyboardSize.height)
+                blackGradientOverlay.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - keyboardSize.height)
                 journalNameTextField.frame.origin.y = view.frame.height - keyboardSize.height - 60 - 20
             }
         }

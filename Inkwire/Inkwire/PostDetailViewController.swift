@@ -2,8 +2,8 @@
 //  PostDetailViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -42,7 +42,7 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
             let index = self.comments.index(where: {$0.commentId == retrievedComment.commentId})
             indexPaths.append(IndexPath(item: index!, section: 1))
             DispatchQueue.main.async {
-                self.collectionView.performBatchUpdates({ Void in
+                self.collectionView.performBatchUpdates({
                     self.collectionView.insertItems(at: indexPaths)
                     self.numComments += indexPaths.count
                     }, completion: nil)
@@ -105,12 +105,12 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
         let month = Constants.months[dateComponents.month! - 1]
         let day = dateComponents.day!
         navigationItem.title = "\(day) \(month)"
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        let titleDict: NSDictionary = [kCTForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
         var items = [UIBarButtonItem]()
         let flagButton = UIBarButtonItem(image: UIImage(named: "flag")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(flagButtonTapped))
         items.append(flagButton)
-        if post?.posterId == FIRAuth.auth()?.currentUser?.uid {
+        if post?.posterId == Auth.auth().currentUser?.uid {
             let deleteButton = UIBarButtonItem(image: UIImage(named: "trash2"), style: .plain, target: self, action: #selector(deleteButtonTapped))
             items.append(deleteButton)
         }
@@ -121,13 +121,13 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
     
     
     func delete() {
-        hud?.textLabel.text = "Deleting..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Deleting..."
+        hud.show(in: view)
         if let i = journal?.postIds?.index(of: post!.postId!) {
             journal?.postIds?.remove(at: i)
             journal?.saveToDB(withBlock: { savedJournal -> Void in
                 DispatchQueue.main.async {
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                     self.navigationController?.popViewController(animated: true)
                 }
             })
@@ -153,7 +153,7 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
         let alert = UIAlertController(title: "Flag Post", message: "Flag this post if you found the content inappropriate.", preferredStyle: UIAlertControllerStyle.alert)
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in }
         let doneAction: UIAlertAction = UIAlertAction(title: "Done", style: .default) { action -> Void in
-            FIRDatabase.database().reference().child("Posts/\(self.post?.postId!)/flagged").setValue(1)
+            Database.database().reference().child("Posts/\(self.post?.postId!)/flagged").setValue(1)
         }
         alert.addAction(cancelAction)
         alert.addAction(doneAction)
@@ -205,7 +205,7 @@ class PostDetailViewController: UIViewController, UINavigationControllerDelegate
             let index = self.comments.index(where: {$0.commentId == savedComment.commentId})
             indexPaths.append(IndexPath(item: index!, section: 1))
             DispatchQueue.main.async {
-                self.collectionView.performBatchUpdates({ Void in
+                self.collectionView.performBatchUpdates({
                     self.collectionView.insertItems(at: indexPaths)
                     self.numComments += indexPaths.count
                     }, completion: { Void in
@@ -278,7 +278,7 @@ extension PostDetailViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         if indexPath.section == 0 {
-            let currUserId = FIRAuth.auth()?.currentUser?.uid
+            let currUserId = Auth.auth().currentUser?.uid
             var genericPostCell: PostDetailCollectionViewCell!
             if post?.imageUrl == nil && post?.content != nil {
                 let postCell = cell as! TextDetailCollectionViewCell

@@ -29,8 +29,8 @@ class AKModalView: UIView {
     
     //Public variables (settings)
     var dismissOnBackgroundTap = true
-    var dismissCompletion: ((Void) -> Void)? = nil
-    var showCompletion: ((Void) -> Void)? = nil
+    var dismissCompletion: (() -> Void)? = nil
+    var showCompletion: (() -> Void)? = nil
     var overlayColor = UIColor.black.withAlphaComponent(0.65)
     var showAnimation = ShowAnimation.SlideFromBottom
     var dismissAnimation = DismissAnimation.SlideToBottom
@@ -65,7 +65,7 @@ class AKModalView: UIView {
         superview!.addSubview(overlay)
         superview?.bringSubview(toFront: overlay)
         
-        SpringAnimation.springWithCompletion(duration: 0.2, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: 0.2, animations: {
             self.overlay.alpha = 1
             }, completion: { success -> Void in
                 if self.showAnimation == .SlideFromBottom {
@@ -83,7 +83,7 @@ class AKModalView: UIView {
         
     }
     
-    func dismiss() {
+    @objc func dismiss() {
         if !dismissEnabled {
             return
         }
@@ -106,7 +106,7 @@ class AKModalView: UIView {
         modalView.frame.origin.y = superview!.frame.maxY
         superview?.addSubview(modalView)
         superview?.bringSubview(toFront: modalView)
-        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: {
             if self.automaticallyCenter {
                 self.modalView.center = (self.superview?.center)!
             } else {
@@ -114,23 +114,23 @@ class AKModalView: UIView {
             }
             
             }, completion: { success -> Void in
-                if self.showCompletion != nil {
-                    self.showCompletion!()
-                }
-        })
+//                if self.showCompletion != nil {
+//                    self.showCompletion
+//                }
+            })
     }
     
     private func slideFromTop() {
         modalView.frame.origin.y = -modalView.frame.height
         superview?.addSubview(modalView)
         superview?.bringSubview(toFront: modalView)
-        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: {
             self.modalView.center = (self.superview?.center)!
             }, completion: { success -> Void in
-                if self.showCompletion != nil {
-                    self.showCompletion!()
-                }
-        })
+//                if self.showCompletion != nil {
+//                    self.showCompletion!(Void)
+//                }
+            })
     }
     
     private func slideFromLeft() {
@@ -138,12 +138,12 @@ class AKModalView: UIView {
         modalView.frame.origin.y = (superview?.center.y)!
         superview?.addSubview(modalView)
         superview?.bringSubview(toFront: modalView)
-        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: {
             self.modalView.center = (self.superview?.center)!
-            }, completion: { success -> Void in
-                if self.showCompletion != nil {
-                    self.showCompletion!()
-                }
+        }, completion: { success -> Void in
+//            if self.showCompletion != nil {
+//                self.showCompletion!(Void)
+//            }
         })
     }
     
@@ -152,12 +152,12 @@ class AKModalView: UIView {
         modalView.frame.origin.y = (superview?.center.y)!
         superview?.addSubview(modalView)
         superview?.bringSubview(toFront: modalView)
-        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: {
             self.modalView.center = (self.superview?.center)!
-            }, completion: { success -> Void in
-                if self.showCompletion != nil {
-                    self.showCompletion!()
-                }
+        }, completion: { success -> Void in
+//            if self.showCompletion != nil {
+//                self.showCompletion!(Void)
+//            }
         })
     }
     
@@ -166,77 +166,80 @@ class AKModalView: UIView {
         modalView.alpha = 0
         superview?.addSubview(modalView)
         superview?.bringSubview(toFront: modalView)
-        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: showAnimationDuration, animations: {
             self.modalView.alpha = 1
-            }, completion: { success -> Void in
-                if self.showCompletion != nil {
-                    self.showCompletion!()
-                }
-        })
+        }, completion: nil)
+//        }, completion: { success -> Void in
+//            if self.showCompletion != nil {
+//                self.showCompletion!(Void)
+//            }
+//        })
     }
     
     private func slideToBottom() {
-        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: {
             self.modalView.frame.origin.y = (self.superview?.frame.height)!
             self.overlay.alpha = 0
             self.overlay.removeFromSuperview()
             self.modalView.removeFromSuperview()
-            }, completion: { success -> Void in
-                if self.dismissCompletion != nil {
-                    self.dismissCompletion!()
-                }
-        })
+        }, completion: nil)
+        //        }, completion: { success -> Void in
+        //            if self.showCompletion != nil {
+        //                self.showCompletion!(Void)
+        //            }
+        //        })
     }
     
     private func slideToTop() {
-        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: {
             self.modalView.frame.origin.y = -self.modalView.frame.height
             self.overlay.alpha = 0
             self.overlay.removeFromSuperview()
             self.modalView.removeFromSuperview()
-            }, completion: { success -> Void in
-                if self.dismissCompletion != nil {
-                    self.dismissCompletion!()
-                }
-        })
+        }, completion: nil)
+        //        }, completion: { success -> Void in
+        //            if self.showCompletion != nil {
+        //                self.showCompletion!(Void)
+        //            }
+        //        })
     }
     
     private func slideToRight() {
-        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: {
             self.modalView.frame.origin.x = (self.superview?.frame.width)!
             self.overlay.alpha = 0
-            }, completion: { success -> Void in
-                self.overlay.removeFromSuperview()
-                self.modalView.removeFromSuperview()
-                if self.dismissCompletion != nil {
-                    self.dismissCompletion!()
-                }
+        }, completion: { success -> Void in
+            self.overlay.removeFromSuperview()
+            self.modalView.removeFromSuperview()
+//            if self.dismissCompletion != nil {
+//                self.dismissCompletion!(Void)
+//            }
         })
     }
     
     private func slideToLeft() {
-        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: {
             self.modalView.frame.origin.x = -self.modalView.frame.width
             self.overlay.alpha = 0
-            }, completion: { success -> Void in
-                self.overlay.removeFromSuperview()
-                self.modalView.removeFromSuperview()
-                if self.dismissCompletion != nil {
-                    self.dismissCompletion!()
-                }
+        }, completion: { success -> Void in
+            self.overlay.removeFromSuperview()
+            self.modalView.removeFromSuperview()
+//            if self.dismissCompletion != nil {
+//                self.dismissCompletion!(Void)
+//            }
         })
     }
     
     private func fadeOut() {
-        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: { Void in
+        SpringAnimation.springWithCompletion(duration: dismissAnimationDuration, animations: {
             self.modalView.alpha = 0
             self.overlay.alpha = 0
-            }, completion: { success -> Void in
-                self.overlay.removeFromSuperview()
-                self.modalView.removeFromSuperview()
-                if self.dismissCompletion != nil {
-                    self.dismissCompletion!()
-                }
+        }, completion: { success -> Void in
+            self.overlay.removeFromSuperview()
+            self.modalView.removeFromSuperview()
+//            if self.dismissCompletion != nil {
+//                self.dismissCompletion!(Void)
+//            }
         })
     }
     

@@ -2,8 +2,8 @@
 //  JournalsFeedViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 import UIKit
 import ChameleonFramework
@@ -40,19 +40,19 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
         setupCollectionView()
         setupNegativeStateView()
         
-        hud?.textLabel.text = "Loading..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Loading..."
+        hud.show(in: view)
     }
    
     func refresh() {
         var possibleJournalIds = [String]()
         
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUserOnce(withId: currUserId!, withBlock: { currUser -> Void in
             possibleJournalIds = currUser.journalIds!
             if possibleJournalIds.count == 0 {
                 self.showNegativeStateView()
-                self.hud?.dismiss()
+                self.hud.dismiss()
                 return
             }
             InkwireDBUtils.pollForJournals(withIds: possibleJournalIds, withBlock: { retrievedJournal -> Void in
@@ -69,12 +69,12 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
                     
                     return
                 }
-                let currUserId = FIRAuth.auth()?.currentUser?.uid
+                let currUserId = Auth.auth().currentUser?.uid
                 if !(retrievedJournal.contributorIds?.contains(currUserId!))! {
                     _ = possibleJournalIds.remove(object: retrievedJournal.journalId!)
                     if possibleJournalIds.count == 0 {
                         self.showNegativeStateView()
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                         return
                     }
                     return
@@ -100,10 +100,10 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
                     }
                     self.numJournals += 1
                     self.collectionView.insertItems(at: indexPaths)
-                    self.collectionView.performBatchUpdates({ Void in
+                    self.collectionView.performBatchUpdates({
                         
                         self.collectionView.reloadItems(at: reloadPaths)
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                         }, completion: nil)
                 }
             })
@@ -247,7 +247,11 @@ extension JournalsFeedViewController: UICollectionViewDelegate, UICollectionView
         journal.getCoverPic(withBlock: { retrievedImage -> Void in
             cell.imageView.image = retrievedImage
         })
-        cell.contributorsLabel.text = "You and \(journal.contributorIds!.count - 1) others"
+        if (journal.contributorIds!.count == 1) {
+            cell.contributorsLabel.text = "🔒 Just you"
+        } else {
+            cell.contributorsLabel.text = "👥 You and \(journal.contributorIds!.count - 1) others"
+        }
         cell.titleLabel.text = journal.title!
     }
     

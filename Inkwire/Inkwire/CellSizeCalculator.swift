@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/28/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
@@ -74,7 +74,7 @@ class CellSizeCalculator {
         paragraphStyle.alignment = .center
         paragraphStyle.lineSpacing = 3
         let attrString = NSMutableAttributedString(string: (withJournal.description!))
-        attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+        attrString.addAttribute(kCTParagraphStyleAttributeName as NSAttributedStringKey, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         tempLabel.attributedText = attrString
         tempLabel.sizeToFit()
         

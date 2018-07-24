@@ -3,7 +3,7 @@
 //  InkwireUITests
 //
 //  Created by Tarun Khasnavis on 11/5/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import XCTest

@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 12/19/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -45,7 +45,7 @@ class NewJournalDescriptionViewController: UIViewController, UINavigationControl
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "backarrow")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(backButtonTapped))
         navigationItem.title = "New Journal"
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        let titleDict: NSDictionary = [kCTForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
     }
     
@@ -83,16 +83,16 @@ extension NewJournalDescriptionViewController: UITextViewDelegate, UITextFieldDe
             if textView.text == "" || textView.text == placeholderText {
                 return false
             } else {
-                hud?.textLabel.text = "Saving..."
-                hud?.show(in: view)
+                hud.textLabel.text = "Saving..."
+                hud.show(in: view)
                 let newJournal = Journal(title: journalName!, description: textView.text, coverPic: journalImage!)
                 newJournal.saveToDB(withBlock: { savedJournal -> Void in
-                    let currUserId = FIRAuth.auth()?.currentUser?.uid
+                    let currUserId = Auth.auth().currentUser?.uid
                     InkwireDBUtils.getUserOnce(withId: currUserId!, withBlock: { currUser -> Void in
                         currUser.journalIds?.append(savedJournal.journalId!)
                         currUser.saveToDB(withBlock: { savedUser -> Void in
                             DispatchQueue.main.async {
-                                self.hud?.dismiss()
+                                self.hud.dismiss()
                                 self.dismiss(animated: true, completion: nil)
                             }
                         })

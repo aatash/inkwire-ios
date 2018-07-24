@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/6/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 import Foundation
 import Firebase
@@ -30,7 +30,7 @@ class Journal {
         }
     }
     var journalId: String?
-    let dbRef = FIRDatabase.database().reference()
+    let dbRef = Database.database().reference()
     private var coverPic: UIImage?
     
     /**
@@ -93,7 +93,7 @@ class Journal {
         postIds = [String]()
         self.coverPic = coverPic
         contributorIds = [String]()
-        contributorIds?.append((FIRAuth.auth()?.currentUser?.uid)!)
+        contributorIds?.append((Auth.auth().currentUser?.uid)!)
         observerIds = [String]()
         self.description = description
         updatedAt = Date()
@@ -141,7 +141,7 @@ class Journal {
      
      */
     func editDescription(newDescription: String) {
-        let ref = FIRDatabase.database().reference()
+        let ref = Database.database().reference()
         ref.child("Journals/").child(journalId!).updateChildValues(["description": description])
     }
     

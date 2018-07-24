@@ -2,8 +2,8 @@
 //  SettingsViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -37,7 +37,7 @@ class SettingsViewController: UIViewController {
         setUpName()
         setUpEmail()
         setUpTableView()
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUser(withId: currUserId!, withBlock: { retrievedUser -> Void in
             self.email.text = retrievedUser.email!
             self.name.text = retrievedUser.name!
@@ -77,7 +77,7 @@ class SettingsViewController: UIViewController {
         
         navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         navigationItem.title = "Settings"
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        let titleDict: NSDictionary = [kCTForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
         navigationController?.navigationBar.layer.shadowColor = Constants.navBarShadowColor.cgColor
         navigationController?.navigationBar.layer.shadowOpacity = 0.9
@@ -133,15 +133,15 @@ class SettingsViewController: UIViewController {
         let alertController = UIAlertController(title: "Change Password", message: "Please enter new password",preferredStyle: .alert)
         
         func newPasswordEntered(alert: UIAlertAction!){
-            hud?.textLabel.text = "Updating..."
-            hud?.show(in: view)
+            hud.textLabel.text = "Updating..."
+            hud.show(in: view)
             
-            FIRAuth.auth()?.currentUser?.updatePassword(changedPasswordTextField.text!, completion: { error -> Void in
+            Auth.auth().currentUser?.updatePassword(to: changedPasswordTextField.text!, completion: { error -> Void in
                 if error != nil {
                     print("error while updating email: \(error)")
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                 } else {
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                 }
             })
         }
@@ -161,21 +161,21 @@ class SettingsViewController: UIViewController {
         let alertController = UIAlertController(title: "Change Email", message: "Please enter new Email",preferredStyle: .alert)
         
         func newEmailEntered(alert: UIAlertAction!){
-            hud?.textLabel.text = "Updating..."
-            hud?.show(in: view)
-            let currUserId = FIRAuth.auth()?.currentUser?.uid
-            FIRAuth.auth()?.currentUser?.updateEmail(changedEmailTextField.text!, completion: { error -> Void in
+            hud.textLabel.text = "Updating..."
+            hud.show(in: view)
+            let currUserId = Auth.auth().currentUser?.uid
+            Auth.auth().currentUser?.updateEmail(to: changedEmailTextField.text!, completion: { error -> Void in
                 if error != nil {
                     print("error while updating email: \(error)")
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                 } else {
-                    FIRDatabase.database().reference().child("Users/\(currUserId!)/email").setValue(self.changedEmailTextField.text!, withCompletionBlock: { (error, ref) -> Void in
+                    Database.database().reference().child("Users/\(currUserId!)/email").setValue(self.changedEmailTextField.text!, withCompletionBlock: { (error, ref) -> Void in
                         if error != nil {
                             self.email.text = self.changedEmailTextField.text!
-                            self.hud?.dismiss()
+                            self.hud.dismiss()
                         } else {
                             print("An error occurred while saving the image url: \(error)")
-                            self.hud?.dismiss()
+                            self.hud.dismiss()
                         }
                     })
                 }
@@ -194,7 +194,7 @@ class SettingsViewController: UIViewController {
     }
     
     func logoutTapped() {
-        try! FIRAuth.auth()!.signOut()
+        try! Auth.auth().signOut()
         dismiss(animated: true, completion: nil)
     }
 }
@@ -266,18 +266,18 @@ extension SettingsViewController: ImagePickerDelegate {
     }
     
     func uploadChangedPicture(changedImage: UIImage) {
-        hud?.textLabel.text = "Saving..."
-        hud?.show(in: view)
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        hud.textLabel.text = "Saving..."
+        hud.show(in: view)
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.uploadImage(image: changedImage, withBlock: { downloadUrlString -> Void in
-            FIRDatabase.database().reference().child("Users/\(currUserId!)/profPicUrl").setValue(downloadUrlString, withCompletionBlock: { (error, ref) -> Void in
+            Database.database().reference().child("Users/\(currUserId!)/profPicUrl").setValue(downloadUrlString, withCompletionBlock: { (error, ref) -> Void in
                 if error == nil {
                     self.profilePic.image = changedImage
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                     print("picture change success")
                 } else {
                     print("An error occurred while saving the image url: \(error)")
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                 }
             })
         })

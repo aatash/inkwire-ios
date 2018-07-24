@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/6/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 import Foundation
 import Firebase
@@ -14,7 +14,7 @@ class Comment {
     var content: String?
     var commenterId: String?
     var commentId: String?
-    let dbRef = FIRDatabase.database().reference()
+    let dbRef = Database.database().reference()
     
     /**
      Initialize a comment object using dictionary retrieved from database.
@@ -49,7 +49,7 @@ class Comment {
     init(text: String) {
         date = Date()
         content = text
-        commenterId = FIRAuth.auth()?.currentUser?.uid
+        commenterId = Auth.auth().currentUser?.uid
     }
     
     /**

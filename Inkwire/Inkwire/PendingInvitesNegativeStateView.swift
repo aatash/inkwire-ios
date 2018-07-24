@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 12/21/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -30,7 +30,7 @@ class PendingInvitesNegativeStateView: UIView {
         paragraphStyle.lineSpacing = 1
         let text = "You don't have any pending invites. Ask your friends to invite you to their journals!"
         let attrString = NSMutableAttributedString(string: text)
-        attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+        attrString.addAttribute(kCTParagraphStyleAttributeName as NSAttributedStringKey, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         helpTextLabel.attributedText = attrString
         addSubview(helpTextLabel)
         

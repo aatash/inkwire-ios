@@ -2,8 +2,8 @@
 //  InviteView.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -134,8 +134,9 @@ class InviteView: UIView {
     
     func getUsers() {
         delegate?.getUsers(withPrefix: searchWord, withBlock: { retrievedUsers -> Void in
-            self.users = retrievedUsers
-            self.numUsers = retrievedUsers.count
+            let filteredUsers = retrievedUsers.filter { $0.archived == nil }
+            self.users = filteredUsers
+            self.numUsers = filteredUsers.count
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

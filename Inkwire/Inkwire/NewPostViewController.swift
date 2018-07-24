@@ -2,8 +2,8 @@
 //  NewPostViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class NewPostViewController: UIViewController {
     var imageView: UIImageView!
     var textView: UITextView!
     var postButton: UIBarButtonItem!
-    let placeholderText = "Make a post to this experience..."
+    let placeholderText = "Make a post to this journal"
     var hud = JGProgressHUD(style: .light)
     var journal: Journal?
     
@@ -35,7 +35,7 @@ class NewPostViewController: UIViewController {
         profPicImageView.contentMode = .scaleAspectFill
         view.addSubview(profPicImageView)
         
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUser(withId: currUserId!, withBlock: { retrievedUser -> Void in
                         
             retrievedUser.getProfPic(withBlock: { retrievedImage -> Void in
@@ -73,7 +73,7 @@ class NewPostViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "x")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(dismissVC))
         navigationItem.title = "New Post"
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        let titleDict: NSDictionary = [kCTForegroundColorAttributeName: UIColor.white]
         navigationController!.navigationBar.titleTextAttributes = titleDict as? Dictionary
     }
     
@@ -85,10 +85,10 @@ class NewPostViewController: UIViewController {
         toolBar.tintColor = UIColor.blue
         postButton = UIBarButtonItem(title: "Post", style: UIBarButtonItemStyle.done, target: self, action: #selector(sendPost))
         postButton.isEnabled = false
-        postButton.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightGray,
-                                           NSFontAttributeName: UIFont(name: "SFUIText-Regular", size: 16)!], for: .disabled)
-        postButton.setTitleTextAttributes([NSForegroundColorAttributeName: Constants.likeColor,
-                                           NSFontAttributeName: UIFont(name: "SFUIText-Regular", size: 16)!], for: .normal)
+        postButton.setTitleTextAttributes([kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.lightGray,
+                                           NSAttributedStringKey.font: UIFont(name: "SFUIText-Regular", size: 16)!], for: .disabled)
+        postButton.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: Constants.likeColor,
+                                           NSAttributedStringKey.font: UIFont(name: "SFUIText-Regular", size: 16)!], for: .normal)
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         
         let cameraButton = UIBarButtonItem(image: UIImage(named: "toolbarCamera")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(cameraButtonTapped))
@@ -106,10 +106,10 @@ class NewPostViewController: UIViewController {
     
     func sendPost() {
         postButton.isEnabled = false
-        hud?.textLabel.text = "Posting..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Posting..."
+        hud.show(in: view)
         journal?.addNewPost(content: textView.text, image: imageView.image, withBlock: { savedPost -> Void in
-            self.hud?.dismiss()
+            self.hud.dismiss()
             self.dismiss(animated: true, completion: nil)
         })
     }

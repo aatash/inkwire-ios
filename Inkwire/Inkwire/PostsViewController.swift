@@ -2,8 +2,8 @@
 //  PostsViewController.swift
 //  Inkwire
 //
-//  Created by Akkshay Khoslaa on 11/16/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Created by Akkshay Khoslaa on 11/6/16.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import UIKit
@@ -50,7 +50,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         
         setupCollectionView()
         setupHeader()
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         if (journal?.contributorIds?.contains(currUserId!))! {
             setupNewPostButton()
         }
@@ -66,6 +66,13 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.isStatusBarHidden = true
         navigationController?.isNavigationBarHidden = true
+        
+//        var newSafeArea = UIEdgeInsets()
+//        // Adjust the safe area to accommodate
+//        //  the width of the side view.
+//        if let headerViewWidth = headerView?.bounds.size.width {
+//            newSafeArea.top += headerViewWidth
+//        }
     }
     
     func setupNewPostButton() {
@@ -92,7 +99,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
             let index = self.posts.index(where: {$0.postId == retrievedPost.postId})
             indexPaths.append(IndexPath(item: index!, section: 1))
             DispatchQueue.main.async {
-                self.collectionView.performBatchUpdates({ Void in
+                self.collectionView.performBatchUpdates({
                     self.collectionView.insertItems(at: indexPaths)
                     self.numPosts += indexPaths.count
                     }, completion: nil)
@@ -152,7 +159,15 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         journalNameLabel?.frame = CGRect(x: 20, y: darkFilter.frame.height - (sizeThatFits?.height)! - 20, width: view.frame.width - 90, height: (sizeThatFits?.height)!)
         darkFilter.addSubview(journalNameLabel!)
      
-        let backButton = UIButton(frame: CGRect(x: 15, y: 15, width: 35, height: 35))
+        var topMargin = 5;
+        if #available(iOS 11.0, *) {
+            if let window = UIApplication.shared.keyWindow {
+                topMargin += Int(window.safeAreaInsets.top)
+//                let leftMargin =  window.safeAreaInsets.left
+            }
+        }
+        
+        let backButton = UIButton(frame: CGRect(x: 15, y: topMargin, width: 35, height: 35))
         backButton.setImage(UIImage(named: "backarrow")?.withRenderingMode(.alwaysTemplate), for: .normal)
         backButton.tintColor = UIColor.white
         backButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
@@ -161,7 +176,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
         view.addSubview(backButton)
         
-        let inviteButton = UIButton(frame: CGRect(x: view.frame.width - 15 - 35, y: 15, width: 35, height: 35))
+        let inviteButton = UIButton(frame: CGRect(x: Int(view.frame.width - 15 - 35), y: topMargin, width: 35, height: 35))
         inviteButton.setImage(UIImage(named: "inviteIcon")?.withRenderingMode(.alwaysTemplate), for: .normal)
         inviteButton.tintColor = UIColor.white
         inviteButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
@@ -170,7 +185,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         inviteButton.addTarget(self, action: #selector(inviteButtonTapped), for: .touchUpInside)
         view.addSubview(inviteButton)
         
-        let deleteButton = UIButton(frame: CGRect(x: view.frame.width - 15 - 35 - 15 - 35, y: 15, width: 35, height: 35))
+        let deleteButton = UIButton(frame: CGRect(x: Int(view.frame.width - 100), y: topMargin, width: 35, height: 35))
         deleteButton.setImage(UIImage(named: "trash")?.withRenderingMode(.alwaysTemplate), for: .normal)
         deleteButton.tintColor = UIColor.white
         deleteButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
@@ -179,9 +194,9 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
         deleteButton.addTarget(self, action: #selector(deleteButtonTapped), for: .touchUpInside)
         view.addSubview(deleteButton)
         
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         if (journal?.contributorIds?.contains(currUserId!))! {
-            let editButton = UIButton(frame: CGRect(x: view.frame.width - 150, y: 15, width: 35, height: 35))
+            let editButton = UIButton(frame: CGRect(x: Int(view.frame.width - 150), y: topMargin, width: 35, height: 35))
             editButton.setImage(UIImage(named: "editbutton")?.withRenderingMode(.alwaysTemplate), for: .normal)
             editButton.tintColor = UIColor.white
             editButton.contentMode = .scaleAspectFit
@@ -228,16 +243,16 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
             if titleField.text == "" || titleField.text == nil {
                 return
             }
-            self.hud?.textLabel.text = "Saving..."
-            self.hud?.show(in: self.view)
+            self.hud.textLabel.text = "Saving..."
+            self.hud.show(in: self.view)
             self.journal?.title = titleField.text
             self.journal?.saveToDB(withBlock: { savedJournal in
-                self.hud?.textLabel.text = "Saved!"
-                self.hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { Void in
+                self.hud.textLabel.text = "Saved!"
+                self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, qos: .userInteractive, flags: [], execute: {
                     self.journal = savedJournal
                     self.journalNameLabel?.text = savedJournal.title
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                 })
             })
         }
@@ -258,16 +273,16 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
             if descriptionField.text == "" || descriptionField.text == nil {
                 return
             }
-            self.hud?.textLabel.text = "Saving..."
-            self.hud?.show(in: self.view)
+            self.hud.textLabel.text = "Saving..."
+            self.hud.show(in: self.view)
             self.journal?.description = descriptionField.text
             self.journal?.saveToDB(withBlock: { savedJournal in
-                self.hud?.textLabel.text = "Saved!"
-                self.hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { Void in
+                self.hud.textLabel.text = "Saved!"
+                self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, qos: .userInteractive, flags: [], execute: {
                     self.journal = savedJournal
                     self.collectionView.reloadItems(at: [IndexPath(item: 0, section: 0)])
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                 })
             })
 
@@ -286,9 +301,9 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
     
     
     func delete() {
-        hud?.textLabel.text = "Deleting..."
-        hud?.show(in: view)
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        hud.textLabel.text = "Deleting..."
+        hud.show(in: view)
+        let currUserId = Auth.auth().currentUser?.uid
         InkwireDBUtils.getUserOnce(withId: currUserId!, withBlock: { currUser -> Void in
             if !(currUser.journalIds?.contains((self.journal?.journalId)!))! {
                 return
@@ -296,7 +311,7 @@ class PostsViewController: UIViewController, UITabBarControllerDelegate, UINavig
             currUser.journalIds?.remove(object: (self.journal?.journalId)!)
             currUser.saveToDB(withBlock: { savedUser -> Void in
                 DispatchQueue.main.async {
-                    self.hud?.dismiss()
+                    self.hud.dismiss()
                     self.navigationController?.popViewController(animated: true)
                     self.delegate?.didDeleteJournal(withId: (self.journal?.journalId)!)
                 }
@@ -416,13 +431,13 @@ extension PostsViewController: UICollectionViewDelegate, UICollectionViewDataSou
             paragraphStyle.lineSpacing = 3
             paragraphStyle.alignment = .center
             let attrString = NSMutableAttributedString(string: (journal?.description!)!)
-            attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+            attrString.addAttribute(kCTParagraphStyleAttributeName as NSAttributedStringKey, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
             cell.descriptionLabel.attributedText = attrString
             return
         }
         
         let post = posts[indexPath.item]
-        let currUserId = FIRAuth.auth()?.currentUser?.uid
+        let currUserId = Auth.auth().currentUser?.uid
         var genericPostCell: PostCollectionViewCell!
         if post.imageUrl == nil && post.content != nil {
             let postCell = cell as! TextPostCollectionViewCell
@@ -504,13 +519,13 @@ extension PostsViewController: InviteViewDelegate {
         }
         
         let newInvite = Invite(receiverIdValue: withId, isAContributor: true, journalIdValue: (journal?.journalId)!)
-        hud?.textLabel.text = "Sending..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Sending..."
+        hud.show(in: view)
         
         newInvite.send(withBlock: { success -> Void in
             DispatchQueue.main.async {
                 self.showSuccess()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, qos: .userInteractive, flags: [], execute: {
                     self.hideSuccess()
                 })
             }
@@ -518,13 +533,13 @@ extension PostsViewController: InviteViewDelegate {
     }
     
     func showSuccess() {
-        hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
-        hud?.textLabel.text = "Sent!"
+        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hud.textLabel.text = "Sent!"
     }
     
     func hideSuccess() {
-        hud?.dismiss()
-        hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hud.dismiss()
+        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
     }
     
     func inviteObserver(withId: String) {
@@ -541,12 +556,12 @@ extension PostsViewController: InviteViewDelegate {
             return
         }
         let newInvite = Invite(receiverIdValue: withId, isAContributor: false, journalIdValue: (journal?.journalId)!)
-        hud?.textLabel.text = "Sending..."
-        hud?.show(in: view)
+        hud.textLabel.text = "Sending..."
+        hud.show(in: view)
         newInvite.send(withBlock: { success -> Void in
             DispatchQueue.main.async {
                 self.showSuccess()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, qos: .userInteractive, flags: [], execute: {
                     self.hideSuccess()
                 })
             }
@@ -579,17 +594,17 @@ extension PostsViewController: ImagePickerDelegate {
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
         imagePicker.dismiss(animated: true, completion: nil)
         if images.count > 0 {
-            self.hud?.textLabel.text = "Saving..."
-            self.hud?.show(in: self.view)
+            self.hud.textLabel.text = "Saving..."
+            self.hud.show(in: self.view)
             InkwireDBUtils.uploadImage(image: images.first!, withBlock: { downloadUrl in
                 self.journal?.imageUrl = downloadUrl
                 self.journal?.saveToDB(withBlock: { savedJournal in
                     self.journal = savedJournal
-                    self.hud?.indicatorView = JGProgressHUDSuccessIndicatorView()
-                    self.hud?.textLabel.text = "Saved!"
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { Void in
+                    self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+                    self.hud.textLabel.text = "Saved!"
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5,  qos: .userInteractive, flags: [], execute: {
                         self.headerView?.image = images.first
-                        self.hud?.dismiss()
+                        self.hud.dismiss()
                     })
                 })
             })

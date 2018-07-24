@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Akkshay Khoslaa on 11/6/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
@@ -11,6 +11,7 @@ import Firebase
 
 class User {
     
+    var archived: Bool?
     var name: String?
     var email: String?
     var profPicUrl: String?
@@ -42,6 +43,9 @@ class User {
     convenience init(key: String, userDict: [String: Any]) {
         self.init()
         userId = key
+        if let archivedVal = userDict["archived"] as? Bool {
+            archived = archivedVal
+        }
         if let username = userDict["fullName"] as? String {
             name = username
         } else {
@@ -56,6 +60,7 @@ class User {
             profPicUrl = ""
         }
         if let userReceivedInviteIds = userDict["receivedInviteIds"] as? [String] {
+            print("hi2")
             self.receivedInviteIds = userReceivedInviteIds
         } else {
             receivedInviteIds = [String]()
@@ -95,7 +100,7 @@ class User {
                         "journalIds": journalIds!]
         print("firing ok")
         print(journalIds?.count)
-        FIRDatabase.database().reference().child("Users/").updateChildValues([userId!: userDict], withCompletionBlock: { (error, ref) -> Void in
+        Database.database().reference().child("Users/").updateChildValues([userId!: userDict], withCompletionBlock: { (error, ref) -> Void in
             if error != nil {
                 print("Error while saving user data: \(error)")
             }

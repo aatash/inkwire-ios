@@ -3,7 +3,7 @@
 //  Inkwire
 //
 //  Created by Virindh Borra on 11/11/16.
-//  Copyright © 2016 Mobile Developers of Berkeley. All rights reserved.
+//  Copyright © 2017 Aatash Parikh. All rights reserved.
 //
 
 import Foundation
