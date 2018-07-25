@@ -13,6 +13,7 @@ class ProjectCards {
     var projName: String?
     var imgURL: String?
     var descrip: String?
-    var users: [String] = []
+    var users: [String]?
+    
     
 }

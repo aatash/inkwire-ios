@@ -13,6 +13,7 @@ class JournalCollectionViewCell: UICollectionViewCell {
     var imageView: UIImageView!
     var titleLabel: UILabel!
     var contributorsLabel: UILabel!
+    var purpleColor = UIColor(hexString: "#5B27A8")?.cgColor
     
     override func awakeFromNib() {
         
@@ -30,13 +31,13 @@ class JournalCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(imageView)
         
         titleLabel = UILabel(frame: CGRect(x: 5, y: imageView.frame.maxY + 5, width: frame.width - 10, height: 35))
-        titleLabel.textColor = UIColor.darkGray
+        titleLabel.textColor = purpleColor
         titleLabel.font = UIFont(name: "SFUIText-Regular", size: 13)
         titleLabel.textAlignment = .center
         contentView.addSubview(titleLabel)
         
         contributorsLabel = UILabel(frame: CGRect(x: 5, y: titleLabel.frame.maxY, width: frame.width - 10, height: 20))
-        contributorsLabel.textColor = UIColor(hex: "#CCD3D7")
+        contributorsLabel.textColor = purpleColor
         contributorsLabel.font = UIFont(name: "SFUIText-Medium", size: 11)
         contributorsLabel.textAlignment = .center
         contentView.addSubview(contributorsLabel)
