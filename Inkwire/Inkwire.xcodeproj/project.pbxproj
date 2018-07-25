@@ -67,6 +67,7 @@
 		8D4304021DCEA35E0052EE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4304001DCEA35E0052EE52 /* LaunchScreen.storyboard */; };
 		8D43040D1DCEA35E0052EE52 /* InkwireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43040C1DCEA35E0052EE52 /* InkwireTests.swift */; };
 		8D4304181DCEA35F0052EE52 /* InkwireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4304171DCEA35F0052EE52 /* InkwireUITests.swift */; };
+		925D9CAC2108FDD300BE2101 /* ProjectCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D9CAB2108FDD300BE2101 /* ProjectCards.swift */; };
 		BAADD44178E37E1BC441BD36 /* Pods_InkwireUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819EE562E25EE7E6C00180BF /* Pods_InkwireUITests.framework */; };
 		E743CEA71DD6587600E04181 /* InkwireUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743CEA61DD6587600E04181 /* InkwireUtils.swift */; };
 /* End PBXBuildFile section */
@@ -159,6 +160,7 @@
 		8D4304171DCEA35F0052EE52 /* InkwireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = InkwireUITests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8D4304191DCEA35F0052EE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB1802E1DE15043007A83CD /* Inkwire-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Inkwire-Bridging-Header.h"; sourceTree = "<group>"; };
+		925D9CAB2108FDD300BE2101 /* ProjectCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCards.swift; sourceTree = "<group>"; };
 		BC38333C08583BE6BBC28E2A /* Pods-Inkwire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inkwire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inkwire/Pods-Inkwire.release.xcconfig"; sourceTree = "<group>"; };
 		CD6EA730AF59DDE39E65C62E /* Pods-Inkwire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inkwire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inkwire/Pods-Inkwire.debug.xcconfig"; sourceTree = "<group>"; };
 		CF53B4B4AEFB04B08276E1B6 /* Pods_Inkwire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inkwire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,6 +239,7 @@
 			children = (
 				167136B01DCFE4F20043C908 /* Journal.swift */,
 				167136B21DCFE51C0043C908 /* User.swift */,
+				925D9CAB2108FDD300BE2101 /* ProjectCards.swift */,
 				167136B41DCFE5250043C908 /* Post.swift */,
 				167136B61DCFE5300043C908 /* Comment.swift */,
 				167136B81DCFE5380043C908 /* Invite.swift */,
@@ -900,6 +903,7 @@
 				16F8C2F51DDD749F0088BA52 /* JournalCollectionViewCell.swift in Sources */,
 				16F8C2ED1DDD739A0088BA52 /* LoginViewController.swift in Sources */,
 				16FF18E21DECB74A0041E4B8 /* CellSizeCalculator.swift in Sources */,
+				925D9CAC2108FDD300BE2101 /* ProjectCards.swift in Sources */,
 				16A872281E0B4AF300BDE00B /* PendingInvitesNegativeStateView.swift in Sources */,
 				1683FC721DF8E1B800F4A273 /* WelcomeScreenPage.swift in Sources */,
 				161FF7281E0890A800663DA3 /* JournalHeaderCollectionViewCell.swift in Sources */,
