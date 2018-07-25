@@ -31,13 +31,13 @@ class JournalCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(imageView)
         
         titleLabel = UILabel(frame: CGRect(x: 5, y: imageView.frame.maxY + 5, width: frame.width - 10, height: 35))
-        titleLabel.textColor = purpleColor
+        titleLabel.textColor = Constants.appColor
         titleLabel.font = UIFont(name: "SFUIText-Regular", size: 13)
         titleLabel.textAlignment = .center
         contentView.addSubview(titleLabel)
         
         contributorsLabel = UILabel(frame: CGRect(x: 5, y: titleLabel.frame.maxY, width: frame.width - 10, height: 20))
-        contributorsLabel.textColor = purpleColor
+        contributorsLabel.textColor = Constants.appColor
         contributorsLabel.font = UIFont(name: "SFUIText-Medium", size: 11)
         contributorsLabel.textAlignment = .center
         contentView.addSubview(contributorsLabel)

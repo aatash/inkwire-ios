@@ -11,8 +11,8 @@ import Foundation
 struct Constants {
     
 //    static let appColor = UIColor(hex: "#6C6FF8")
-    static let appColor = UIColor(hex: "#2D2E31")
-    static let backgroundColor = UIColor(hex: "#EEF2F5")
+    static let appColor = UIColor(hex: "#5B27A8")
+    static let backgroundColor = UIColor(hex: "#26232A")
     static let unlikeColor = UIColor(hex: "#C3CFD7")
     static let likeColor = UIColor(hex: "#2388CB")
     static let postSeparatorColor = UIColor(hex: "#E3E8EC")

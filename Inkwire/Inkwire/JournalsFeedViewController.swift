@@ -23,6 +23,7 @@ class JournalsFeedViewController: UIViewController, UINavigationControllerDelega
     var selectedImageForJournal: UIImage?
     var negativeStateView: JournalsNegativeStateView!
     var menuButton: BBBadgeBarButtonItem!
+    var purpleColor = UIColor(hexString: "#5B27A8")?.cgColor
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
