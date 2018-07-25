@@ -82,7 +82,7 @@ class InkwireDBUtils {
             if (error != nil) {
                 print("an error occurred while uploading the image: \(error)")
             } else {
-                storageRef.downloadURL { url, error in
+                imageRef.downloadURL { url, error in
                     if let error = error {
                         print("Error while fetching Download URL image: \(error)")
                     } else {
